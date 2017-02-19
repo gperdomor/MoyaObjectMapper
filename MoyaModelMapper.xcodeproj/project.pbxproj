@@ -8,11 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		52D6D9871BEFF229002C0205 /* MoyaModelMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* MoyaModelMapper.framework */; };
-		52D6D9981BEFF375002C0205 /* MoyaModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9961BEFF375002C0205 /* MoyaModelMapper.swift */; };
 		52D6D99B1BEFF375002C0205 /* MoyaModelMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9971BEFF375002C0205 /* MoyaModelMapperTests.swift */; };
-		52D6D9EA1BEFFFA4002C0205 /* MoyaModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9961BEFF375002C0205 /* MoyaModelMapper.swift */; };
-		52D6DA091BF00081002C0205 /* MoyaModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9961BEFF375002C0205 /* MoyaModelMapper.swift */; };
-		52D6DA261BF00118002C0205 /* MoyaModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9961BEFF375002C0205 /* MoyaModelMapper.swift */; };
+		65F26F6E1E595CFF000471FA /* Response+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F26F691E595CFF000471FA /* Response+ModelMapper.swift */; };
+		65F26F6F1E595CFF000471FA /* Response+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F26F691E595CFF000471FA /* Response+ModelMapper.swift */; };
+		65F26F701E595CFF000471FA /* Response+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F26F691E595CFF000471FA /* Response+ModelMapper.swift */; };
+		65F26F711E595CFF000471FA /* Response+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F26F691E595CFF000471FA /* Response+ModelMapper.swift */; };
+		65F26F721E595CFF000471FA /* SignalProducer+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F26F6B1E595CFF000471FA /* SignalProducer+ModelMapper.swift */; };
+		65F26F731E595CFF000471FA /* SignalProducer+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F26F6B1E595CFF000471FA /* SignalProducer+ModelMapper.swift */; };
+		65F26F741E595CFF000471FA /* SignalProducer+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F26F6B1E595CFF000471FA /* SignalProducer+ModelMapper.swift */; };
+		65F26F751E595CFF000471FA /* SignalProducer+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F26F6B1E595CFF000471FA /* SignalProducer+ModelMapper.swift */; };
+		65F26F761E595CFF000471FA /* Observable+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F26F6D1E595CFF000471FA /* Observable+ModelMapper.swift */; };
+		65F26F771E595CFF000471FA /* Observable+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F26F6D1E595CFF000471FA /* Observable+ModelMapper.swift */; };
+		65F26F781E595CFF000471FA /* Observable+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F26F6D1E595CFF000471FA /* Observable+ModelMapper.swift */; };
+		65F26F791E595CFF000471FA /* Observable+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F26F6D1E595CFF000471FA /* Observable+ModelMapper.swift */; };
 		DD7502861C68FDDC006590AF /* MoyaModelMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9971BEFF375002C0205 /* MoyaModelMapperTests.swift */; };
 		DD7502881C68FEDE006590AF /* MoyaModelMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6DA0F1BF000BD002C0205 /* MoyaModelMapper.framework */; };
 		DD7502921C690C7A006590AF /* MoyaModelMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D9F01BEFFFBE002C0205 /* MoyaModelMapper.framework */; };
@@ -46,11 +54,13 @@
 /* Begin PBXFileReference section */
 		52D6D97C1BEFF229002C0205 /* MoyaModelMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MoyaModelMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6D9861BEFF229002C0205 /* MoyaModelMapper-iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MoyaModelMapper-iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		52D6D9961BEFF375002C0205 /* MoyaModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoyaModelMapper.swift; path = Sources/MoyaModelMapper.swift; sourceTree = "<group>"; };
 		52D6D9971BEFF375002C0205 /* MoyaModelMapperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoyaModelMapperTests.swift; path = Tests/MoyaModelMapperTests/MoyaModelMapperTests.swift; sourceTree = "<group>"; };
 		52D6D9E21BEFFF6E002C0205 /* MoyaModelMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MoyaModelMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6D9F01BEFFFBE002C0205 /* MoyaModelMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MoyaModelMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6DA0F1BF000BD002C0205 /* MoyaModelMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MoyaModelMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65F26F691E595CFF000471FA /* Response+ModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Response+ModelMapper.swift"; sourceTree = "<group>"; };
+		65F26F6B1E595CFF000471FA /* SignalProducer+ModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignalProducer+ModelMapper.swift"; sourceTree = "<group>"; };
+		65F26F6D1E595CFF000471FA /* Observable+ModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+ModelMapper.swift"; sourceTree = "<group>"; };
 		AD2FAA261CD0B6D800659CF4 /* MoyaModelMapper.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MoyaModelMapper.plist; sourceTree = "<group>"; };
 		AD2FAA281CD0B6E100659CF4 /* MoyaModelMapperTests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MoyaModelMapperTests.plist; sourceTree = "<group>"; };
 		DD75027A1C68FCFC006590AF /* MoyaModelMapper-macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MoyaModelMapper-macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,7 +126,8 @@
 		52D6D9721BEFF229002C0205 = {
 			isa = PBXGroup;
 			children = (
-				52D6D9961BEFF375002C0205 /* MoyaModelMapper.swift */,
+				65F26F7A1E595D0C000471FA /* Sources */,
+				65F26F951E595DAF000471FA /* Tests */,
 				52D6D9971BEFF375002C0205 /* MoyaModelMapperTests.swift */,
 				52D6D99C1BEFF38C002C0205 /* Configs */,
 				52D6D97D1BEFF229002C0205 /* Products */,
@@ -144,6 +155,50 @@
 				DD7502731C68FC20006590AF /* Tests */,
 			);
 			path = Configs;
+			sourceTree = "<group>";
+		};
+		65F26F681E595CFF000471FA /* MoyaModelMapper */ = {
+			isa = PBXGroup;
+			children = (
+				65F26F691E595CFF000471FA /* Response+ModelMapper.swift */,
+			);
+			name = MoyaModelMapper;
+			path = Sources/MoyaModelMapper;
+			sourceTree = "<group>";
+		};
+		65F26F6A1E595CFF000471FA /* ReactiveMoyaModelMapper */ = {
+			isa = PBXGroup;
+			children = (
+				65F26F6B1E595CFF000471FA /* SignalProducer+ModelMapper.swift */,
+			);
+			name = ReactiveMoyaModelMapper;
+			path = Sources/ReactiveMoyaModelMapper;
+			sourceTree = "<group>";
+		};
+		65F26F6C1E595CFF000471FA /* RxMoyaModelMapper */ = {
+			isa = PBXGroup;
+			children = (
+				65F26F6D1E595CFF000471FA /* Observable+ModelMapper.swift */,
+			);
+			name = RxMoyaModelMapper;
+			path = Sources/RxMoyaModelMapper;
+			sourceTree = "<group>";
+		};
+		65F26F7A1E595D0C000471FA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				65F26F681E595CFF000471FA /* MoyaModelMapper */,
+				65F26F6A1E595CFF000471FA /* ReactiveMoyaModelMapper */,
+				65F26F6C1E595CFF000471FA /* RxMoyaModelMapper */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		65F26F951E595DAF000471FA /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Tests;
 			sourceTree = "<group>";
 		};
 		DD7502721C68FC1B006590AF /* Frameworks */ = {
@@ -330,7 +385,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0810;
-				ORGANIZATIONNAME = "MoyaModelMapper";
+				ORGANIZATIONNAME = MoyaModelMapper;
 				TargetAttributes = {
 					52D6D97B1BEFF229002C0205 = {
 						CreatedOnToolsVersion = 7.1;
@@ -442,7 +497,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52D6D9981BEFF375002C0205 /* MoyaModelMapper.swift in Sources */,
+				65F26F761E595CFF000471FA /* Observable+ModelMapper.swift in Sources */,
+				65F26F6E1E595CFF000471FA /* Response+ModelMapper.swift in Sources */,
+				65F26F721E595CFF000471FA /* SignalProducer+ModelMapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,7 +515,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52D6D9EA1BEFFFA4002C0205 /* MoyaModelMapper.swift in Sources */,
+				65F26F781E595CFF000471FA /* Observable+ModelMapper.swift in Sources */,
+				65F26F701E595CFF000471FA /* Response+ModelMapper.swift in Sources */,
+				65F26F741E595CFF000471FA /* SignalProducer+ModelMapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,7 +525,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52D6DA091BF00081002C0205 /* MoyaModelMapper.swift in Sources */,
+				65F26F791E595CFF000471FA /* Observable+ModelMapper.swift in Sources */,
+				65F26F711E595CFF000471FA /* Response+ModelMapper.swift in Sources */,
+				65F26F751E595CFF000471FA /* SignalProducer+ModelMapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,7 +535,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52D6DA261BF00118002C0205 /* MoyaModelMapper.swift in Sources */,
+				65F26F771E595CFF000471FA /* Observable+ModelMapper.swift in Sources */,
+				65F26F6F1E595CFF000471FA /* Response+ModelMapper.swift in Sources */,
+				65F26F731E595CFF000471FA /* SignalProducer+ModelMapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
