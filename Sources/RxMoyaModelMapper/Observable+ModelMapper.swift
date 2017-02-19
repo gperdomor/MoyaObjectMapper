@@ -25,3 +25,26 @@
 //
 
 import Foundation
+import RxSwift
+import Moya
+import Mapper
+import MoyaModelMapper
+
+public extension ObservableType where E == Response {
+    
+    public func map<T: Mappable>(to type: T.Type, fromKey keyPath: String? = nil) ->  Observable<T> {
+        return observeOn(ConcurrentDispatchQueueScheduler(qos: .background))
+            .flatMap { response -> Observable<T> in
+                return Observable.just(try response.map(to: type, fromKey: keyPath))
+            }
+            .observeOn(MainScheduler.instance)
+    }
+    
+    public func map<T: Mappable>(to type: [T.Type], fromKey keyPath: String? = nil) throws -> Observable<[T]> {
+        return observeOn(ConcurrentDispatchQueueScheduler(qos: .background))
+            .flatMap { response -> Observable<[T]> in
+                return Observable.just(try response.map(to: type, fromKey: keyPath))
+            }
+            .observeOn(MainScheduler.instance)
+    }
+}
