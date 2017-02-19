@@ -31,7 +31,6 @@ import Mapper
 import MoyaModelMapper
 
 public extension ObservableType where E == Response {
-    
     public func map<T: Mappable>(to type: T.Type, fromKey keyPath: String? = nil) ->  Observable<T> {
         return observeOn(ConcurrentDispatchQueueScheduler(qos: .background))
             .flatMap { response -> Observable<T> in
@@ -44,6 +43,32 @@ public extension ObservableType where E == Response {
         return observeOn(ConcurrentDispatchQueueScheduler(qos: .background))
             .flatMap { response -> Observable<[T]> in
                 return Observable.just(try response.map(to: type, fromKey: keyPath))
+            }
+            .observeOn(MainScheduler.instance)
+    }
+    
+    public func mapOptional<T: Mappable>(to type: T.Type, fromKey keyPath: String? = nil) ->  Observable<T?> {
+        return observeOn(ConcurrentDispatchQueueScheduler(qos: .background))
+            .flatMap { response -> Observable<T?> in
+                do {
+                    let object: T = try response.map(to: type, fromKey: keyPath)
+                    return Observable.just(object)
+                } catch {
+                    return Observable.just(nil)
+                }
+            }
+            .observeOn(MainScheduler.instance)
+    }
+    
+    public func mapOptional<T: Mappable>(to type: [T.Type], fromKey keyPath: String? = nil) -> Observable<[T]?> {
+        return observeOn(ConcurrentDispatchQueueScheduler(qos: .background))
+            .flatMap { response -> Observable<[T]?> in
+                do {
+                    let object: [T] = try response.map(to: type, fromKey: keyPath)
+                    return Observable.just(object)
+                } catch {
+                    return Observable.just(nil)
+                }
             }
             .observeOn(MainScheduler.instance)
     }

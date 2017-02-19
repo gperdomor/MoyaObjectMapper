@@ -43,7 +43,7 @@ class RxMoyaModelMapperSpec: QuickSpec {
                     repos = try self.provider.request(GitHub.repos(username: "gperdomor", keyPath: false))
                         .map(to: [Repository.self])
                         .toBlocking()
-                        .first()
+                        .single()
                     
                     expect(repos!.count).to(equal(1))
                     expect(repos![0].identifier).to(equal(1))
@@ -63,7 +63,7 @@ class RxMoyaModelMapperSpec: QuickSpec {
                     repos = try self.provider.request(GitHub.repos(username: "gperdomor", keyPath: true))
                         .map(to: [Repository.self], fromKey: "data")
                         .toBlocking()
-                        .first()
+                        .single()
                     
                     expect(repos.count).to(equal(1))
                     expect(repos[0].identifier).to(equal(1))
@@ -83,7 +83,7 @@ class RxMoyaModelMapperSpec: QuickSpec {
                     repo = try self.provider.request(GitHub.repo(fullName: "gperdomor/sygnaler", keyPath: false))
                         .map(to: Repository.self)
                         .toBlocking()
-                        .first()
+                        .single()
                     
                     expect(repo.identifier).to(equal(1))
                     expect(repo.name).to(equal("sygnaler"))
@@ -102,7 +102,7 @@ class RxMoyaModelMapperSpec: QuickSpec {
                     repo = try self.provider.request(GitHub.repo(fullName: "gperdomor/sygnaler", keyPath: true))
                         .map(to: Repository.self, fromKey: "data")
                         .toBlocking()
-                        .first()
+                        .single()
                     
                     expect(repo.identifier).to(equal(1))
                     expect(repo.name).to(equal("sygnaler"))
@@ -121,13 +121,35 @@ class RxMoyaModelMapperSpec: QuickSpec {
                     repo = try self.provider.request(GitHub.repo(fullName: "gperdomor/sygnaler", keyPath: true))
                         .map(to: Repository.self, fromKey: "tests")
                         .toBlocking()
-                        .first()
+                        .single()
                     
                     expect(repo.identifier).to(equal(1))
                     expect(repo.name).to(equal("sygnaler"))
                     expect(repo.fullName).to(equal("gperdomor/sygnaler"))
                     expect(repo.language).to(equal("Swift"))
                     
+                } catch {
+                    expect(true).to(beTrue())
+                }
+            }
+            
+            it("can map optionals") {
+                do {
+                    var repo: Repository?
+                    
+                    repo = try self.provider.request(GitHub.repo(fullName: "gperdomor/sygnaler", keyPath: true))
+                        .mapOptional(to: Repository.self, fromKey: "tests")
+                        .toBlocking()
+                        .single()!
+                    
+                    expect(repo).to(beNil())
+                    
+                    repo = try self.provider.request(GitHub.repo(fullName: "gperdomor/sygnaler", keyPath: true))
+                        .mapOptional(to: Repository.self, fromKey: "data")
+                        .toBlocking()
+                        .single()!
+                    
+                    expect(repo).toNot(beNil())
                 } catch {
                     expect(true).to(beTrue())
                 }
