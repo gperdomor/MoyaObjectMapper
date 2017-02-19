@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6583CA8E1E5A364800DE8528"
-               BuildableName = "RxMoyaModelMapper-watchOS.framework"
+               BuildableName = "RxMoyaModelMapper.framework"
                BlueprintName = "RxMoyaModelMapper-watchOS"
                ReferencedContainer = "container:MoyaModelMapper.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6583CA8E1E5A364800DE8528"
-            BuildableName = "RxMoyaModelMapper-watchOS.framework"
+            BuildableName = "RxMoyaModelMapper.framework"
             BlueprintName = "RxMoyaModelMapper-watchOS"
             ReferencedContainer = "container:MoyaModelMapper.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6583CA8E1E5A364800DE8528"
-            BuildableName = "RxMoyaModelMapper-watchOS.framework"
+            BuildableName = "RxMoyaModelMapper.framework"
             BlueprintName = "RxMoyaModelMapper-watchOS"
             ReferencedContainer = "container:MoyaModelMapper.xcodeproj">
          </BuildableReference>
