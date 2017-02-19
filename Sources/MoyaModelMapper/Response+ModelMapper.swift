@@ -22,5 +22,52 @@
 //  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
+//
 
 import Foundation
+import Moya
+import Mapper
+
+public extension Response {
+    public func map<T: Mappable>(to type: T.Type) throws -> T {
+        guard let jsonDictionary = try mapJSON() as? NSDictionary,
+            let object = T.from(jsonDictionary) else {
+                throw MoyaError.jsonMapping(self)
+        }
+        
+        return object
+    }
+    
+    public func map<T: Mappable>(to type: T.Type, fromKey keyPath: String?) throws -> T {
+        guard let keyPath = keyPath else { return try map(to: type) }
+        
+        guard let jsonDictionary = try mapJSON() as? NSDictionary,
+            let objectDictionary = jsonDictionary.value(forKeyPath: keyPath) as? NSDictionary,
+            let object = T.from(objectDictionary) else {
+                throw MoyaError.jsonMapping(self)
+        }
+        
+        return object
+    }
+    
+    public func map<T: Mappable>(to type: [T.Type]) throws -> [T] {
+        guard let data = try mapJSON() as? NSArray,
+            let object = T.from(data) else {
+                throw MoyaError.jsonMapping(self)
+        }
+        return object
+        
+    }
+    
+    public func map<T: Mappable>(to type: [T.Type], fromKey keyPath: String? = nil) throws -> [T] {
+        guard let keyPath = keyPath else { return try map(to: type) }
+        
+        guard let data = try mapJSON() as? NSDictionary,
+            let objectArray = data.value(forKeyPath: keyPath) as? NSArray,
+            let object = T.from(objectArray) else {
+                throw MoyaError.jsonMapping(self)
+        }
+        
+        return object
+    }
+}

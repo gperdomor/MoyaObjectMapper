@@ -1,0 +1,2 @@
+github "Moya/Moya" ~> 8.0
+github "lyft/mapper" ~> 6.0
