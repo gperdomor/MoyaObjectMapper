@@ -16,6 +16,7 @@ let package = Package(
     exclude: [
         "Carthage",
         "Configs",
+        "Demo",
         "scripts"
     ]
 )
