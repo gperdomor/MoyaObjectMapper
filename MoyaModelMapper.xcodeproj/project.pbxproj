@@ -143,7 +143,6 @@
 		65F568C51E59F0700022936D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568BB1E59F0320022936D /* Alamofire.framework */; };
 		65F568C81E59F0700022936D /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568C61E59F0700022936D /* Nimble.framework */; };
 		65F568C91E59F0700022936D /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568C71E59F0700022936D /* Quick.framework */; };
-		65F568CD1E59F3590022936D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568CA1E59F3590022936D /* Alamofire.framework */; };
 		65F568CE1E59F3590022936D /* Mapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568CB1E59F3590022936D /* Mapper.framework */; };
 		65F568CF1E59F3590022936D /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568CC1E59F3590022936D /* Moya.framework */; };
 		65F568D61E59F3EF0022936D /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568D41E59F3EF0022936D /* Nimble.framework */; };
@@ -515,7 +514,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65F568CD1E59F3590022936D /* Alamofire.framework in Frameworks */,
 				65F568CE1E59F3590022936D /* Mapper.framework in Frameworks */,
 				65F568CF1E59F3590022936D /* Moya.framework in Frameworks */,
 			);
@@ -1056,7 +1054,6 @@
 				52D6D9DE1BEFFF6E002C0205 /* Frameworks */,
 				52D6D9DF1BEFFF6E002C0205 /* Headers */,
 				52D6D9E01BEFFF6E002C0205 /* Resources */,
-				65F5692C1E5A04150022936D /* Carthage Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1075,7 +1072,6 @@
 				52D6D9EC1BEFFFBE002C0205 /* Frameworks */,
 				52D6D9ED1BEFFFBE002C0205 /* Headers */,
 				52D6D9EE1BEFFFBE002C0205 /* Resources */,
-				65F5692D1E5A046D0022936D /* Carthage Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1223,7 +1219,6 @@
 				6583CA911E5A364800DE8528 /* Frameworks */,
 				6583CA941E5A364800DE8528 /* Headers */,
 				6583CA951E5A364800DE8528 /* Resources */,
-				6583CA961E5A364800DE8528 /* Carthage Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1279,7 +1274,6 @@
 				65D3DEF61E5B23390001A05A /* Frameworks */,
 				65D3DEFA1E5B23390001A05A /* Headers */,
 				65D3DEFB1E5B23390001A05A /* Resources */,
-				65D3DEFC1E5B23390001A05A /* Carthage Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1317,7 +1311,6 @@
 				65D3DF2C1E5B25C10001A05A /* Frameworks */,
 				65D3DF2F1E5B25C10001A05A /* Headers */,
 				65D3DF301E5B25C10001A05A /* Resources */,
-				65D3DF311E5B25C10001A05A /* Carthage Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1629,89 +1622,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		6583CA961E5A364800DE8528 /* Carthage Copy Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/watchOS/Mapper.framework",
-				"$(SRCROOT)/Carthage/Build/watchOS/Moya.framework",
-			);
-			name = "Carthage Copy Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-		65D3DEFC1E5B23390001A05A /* Carthage Copy Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/tvOS/Mapper.framework",
-				"$(SRCROOT)/Carthage/Build/tvOS/Moya.framework",
-			);
-			name = "Carthage Copy Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-		65D3DF311E5B25C10001A05A /* Carthage Copy Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/watchOS/Mapper.framework",
-				"$(SRCROOT)/Carthage/Build/watchOS/Moya.framework",
-			);
-			name = "Carthage Copy Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-		65F5692C1E5A04150022936D /* Carthage Copy Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/watchOS/Mapper.framework",
-				"$(SRCROOT)/Carthage/Build/watchOS/Moya.framework",
-			);
-			name = "Carthage Copy Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-		65F5692D1E5A046D0022936D /* Carthage Copy Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/tvOS/Mapper.framework",
-				"$(SRCROOT)/Carthage/Build/tvOS/Moya.framework",
-			);
-			name = "Carthage Copy Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		52D6D9771BEFF229002C0205 /* Sources */ = {
