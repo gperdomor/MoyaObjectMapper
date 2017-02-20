@@ -419,7 +419,7 @@
 		651AC8E71E5A8F14000F24CF /* ReactiveMoyaModelMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveMoyaModelMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		651AC8EA1E5A921C000F24CF /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
 		651AC9041E5A9700000F24CF /* ReactiveMoyaModelMapper-iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactiveMoyaModelMapper-iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		651AC90A1E5A98C9000F24CF /* ReactiveMoyaModelMapperSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveMoyaModelMapperSpec.swift; sourceTree = "<group>"; };
+		651AC90A1E5A98C9000F24CF /* ReactiveMoyaModelMapperSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReactiveMoyaModelMapperSpec.swift; path = Tests/ReactiveMoyaModelMapperTests/ReactiveMoyaModelMapperSpec.swift; sourceTree = "<group>"; };
 		651AC90C1E5A9A04000F24CF /* ReactiveMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveMoya.framework; path = Carthage/Build/iOS/ReactiveMoya.framework; sourceTree = "<group>"; };
 		6583C9F91E5A25B700DE8528 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
 		6583C9FA1E5A25B700DE8528 /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/iOS/RxMoya.framework; sourceTree = "<group>"; };
@@ -472,7 +472,7 @@
 		65F5692A1E5A03E50022936D /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
 		65F569341E5A04D10022936D /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/tvOS/Result.framework; sourceTree = "<group>"; };
 		65F56A801E5A17800022936D /* RxMoyaModelMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxMoyaModelMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		65F56A821E5A19030022936D /* RxMoyaModelMapperSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RxMoyaModelMapperSpec.swift; path = Tests/RxModelMapperTests/RxMoyaModelMapperSpec.swift; sourceTree = "<group>"; };
+		65F56A821E5A19030022936D /* RxMoyaModelMapperSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RxMoyaModelMapperSpec.swift; path = Tests/RxMoyaModelMapperTests/RxMoyaModelMapperSpec.swift; sourceTree = "<group>"; };
 		65F56A9B1E5A190A0022936D /* RxMoyaModelMapper-iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RxMoyaModelMapper-iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F56AA01E5A1A020022936D /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		AD2FAA261CD0B6D800659CF4 /* MoyaModelMapper.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MoyaModelMapper.plist; sourceTree = "<group>"; };
@@ -755,20 +755,20 @@
 			name = RxMoyaModelMapperTests;
 			sourceTree = "<group>";
 		};
-		651AC8DA1E5A8E15000F24CF /* MoyaModelMapper */ = {
+		651AC8DA1E5A8E15000F24CF /* MoyaModelMapperTests */ = {
 			isa = PBXGroup;
 			children = (
 				52D6D9971BEFF375002C0205 /* MoyaModelMapperSpec.swift */,
 			);
-			name = MoyaModelMapper;
+			name = MoyaModelMapperTests;
 			sourceTree = "<group>";
 		};
-		651AC8DB1E5A8E38000F24CF /* ReactiveMoyaModelMapper */ = {
+		651AC8DB1E5A8E38000F24CF /* ReactiveMoyaModelMapperTests */ = {
 			isa = PBXGroup;
 			children = (
 				651AC90A1E5A98C9000F24CF /* ReactiveMoyaModelMapperSpec.swift */,
 			);
-			name = ReactiveMoyaModelMapper;
+			name = ReactiveMoyaModelMapperTests;
 			sourceTree = "<group>";
 		};
 		65F26F681E595CFF000471FA /* MoyaModelMapper */ = {
@@ -812,8 +812,8 @@
 			isa = PBXGroup;
 			children = (
 				65F26FA01E59723A000471FA /* API */,
-				651AC8DA1E5A8E15000F24CF /* MoyaModelMapper */,
-				651AC8DB1E5A8E38000F24CF /* ReactiveMoyaModelMapper */,
+				651AC8DA1E5A8E15000F24CF /* MoyaModelMapperTests */,
+				651AC8DB1E5A8E38000F24CF /* ReactiveMoyaModelMapperTests */,
 				651AC8D91E5A8DF9000F24CF /* RxMoyaModelMapperTests */,
 			);
 			name = Tests;
