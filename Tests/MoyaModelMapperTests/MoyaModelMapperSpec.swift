@@ -1,5 +1,5 @@
 //
-//  MoyaModelMapperTests.swift
+//  MoyaModelMapperSpec.swift
 //  MoyaModelMapper
 //
 //  Created by Gustavo Perdomo on 2/19/17.

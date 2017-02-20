@@ -31,14 +31,14 @@ Pod::Spec.new do |s|
     ss.framework  = "Foundation"
   end
 
-  s.subspec "RxMoyaModelMapper" do |ss|
-    ss.source_files = "Source/RxMoyaModelMapper/*.swift"
+  s.subspec "RxSwift" do |ss|
+    ss.source_files = "Sources/RxMoyaModelMapper/*.swift"
     ss.dependency "Moya/RxSwift", "~> 8.0.0"
     ss.dependency "MoyaModelMapper/Core"
     ss.dependency "RxSwift"
   end
 
-  s.subspec "ReactiveMoyaModelMapper" do |ss|
+  s.subspec "ReactiveSwift" do |ss|
     ss.source_files = "Sources/ReactiveMoyaModelMapper/*.swift"
     ss.dependency "Moya/ReactiveCocoa", "~> 8.0.0"
     ss.dependency "MoyaModelMapper/Core"

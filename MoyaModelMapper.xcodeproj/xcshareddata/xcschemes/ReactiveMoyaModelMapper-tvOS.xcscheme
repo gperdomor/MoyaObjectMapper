@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6583CA461E5A2FA000DE8528"
-               BuildableName = "RxMoyaModelMapper.framework"
-               BlueprintName = "RxMoyaModelMapper-tvOS"
+               BlueprintIdentifier = "65D3DEF31E5B23390001A05A"
+               BuildableName = "ReactiveMoyaModelMapper.framework"
+               BlueprintName = "ReactiveMoyaModelMapper-tvOS"
                ReferencedContainer = "container:MoyaModelMapper.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,9 +28,9 @@
             buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6583CA551E5A304B00DE8528"
-               BuildableName = "RxMoyaModelMapper-tvOS Tests.xctest"
-               BlueprintName = "RxMoyaModelMapper-tvOS Tests"
+               BlueprintIdentifier = "65D3DF071E5B24100001A05A"
+               BuildableName = "ReactiveMoyaModelMapper-tvOS Tests.xctest"
+               BlueprintName = "ReactiveMoyaModelMapper-tvOS Tests"
                ReferencedContainer = "container:MoyaModelMapper.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,9 +47,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6583CA551E5A304B00DE8528"
-               BuildableName = "RxMoyaModelMapper-tvOS Tests.xctest"
-               BlueprintName = "RxMoyaModelMapper-tvOS Tests"
+               BlueprintIdentifier = "65D3DF071E5B24100001A05A"
+               BuildableName = "ReactiveMoyaModelMapper-tvOS Tests.xctest"
+               BlueprintName = "ReactiveMoyaModelMapper-tvOS Tests"
                ReferencedContainer = "container:MoyaModelMapper.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -57,9 +57,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6583CA461E5A2FA000DE8528"
-            BuildableName = "RxMoyaModelMapper.framework"
-            BlueprintName = "RxMoyaModelMapper-tvOS"
+            BlueprintIdentifier = "65D3DEF31E5B23390001A05A"
+            BuildableName = "ReactiveMoyaModelMapper.framework"
+            BlueprintName = "ReactiveMoyaModelMapper-tvOS"
             ReferencedContainer = "container:MoyaModelMapper.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -79,9 +79,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6583CA461E5A2FA000DE8528"
-            BuildableName = "RxMoyaModelMapper.framework"
-            BlueprintName = "RxMoyaModelMapper-tvOS"
+            BlueprintIdentifier = "65D3DEF31E5B23390001A05A"
+            BuildableName = "ReactiveMoyaModelMapper.framework"
+            BlueprintName = "ReactiveMoyaModelMapper-tvOS"
             ReferencedContainer = "container:MoyaModelMapper.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -97,9 +97,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6583CA461E5A2FA000DE8528"
-            BuildableName = "RxMoyaModelMapper.framework"
-            BlueprintName = "RxMoyaModelMapper-tvOS"
+            BlueprintIdentifier = "65D3DEF31E5B23390001A05A"
+            BuildableName = "ReactiveMoyaModelMapper.framework"
+            BlueprintName = "ReactiveMoyaModelMapper-tvOS"
             ReferencedContainer = "container:MoyaModelMapper.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

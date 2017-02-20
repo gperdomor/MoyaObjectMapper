@@ -25,3 +25,50 @@
 //
 
 import Foundation
+import ReactiveSwift
+import Moya
+import Mapper
+import MoyaModelMapper
+
+extension SignalProducerProtocol where Value == Moya.Response, Error == MoyaError {
+    
+    public func map<T: Mappable>(to type: T.Type, fromKey keyPath: String? = nil) -> SignalProducer<T, MoyaError> {
+        return producer.flatMap(.latest) { response -> SignalProducer<T, Error> in
+            return unwrapThrowable { try response.map(to: type, fromKey: keyPath) }
+        }
+    }
+    
+    public func map<T: Mappable>(to type: [T.Type], fromKey keyPath: String? = nil) -> SignalProducer<[T], MoyaError> {
+        return producer.flatMap(.latest) { response -> SignalProducer<[T], Error> in
+            return unwrapThrowable { try response.map(to: type, fromKey: keyPath) }
+        }
+    }
+    
+    public func mapOptional<T: Mappable>(to type: T.Type, fromKey keyPath: String? = nil) -> SignalProducer<T?, MoyaError> {
+        return producer.flatMap(.latest) { response -> SignalProducer<T?, Error> in
+            return unwrapOptionalThrowable { try response.map(to: type, fromKey: keyPath) }
+        }
+    }
+    
+    public func mapOptional<T: Mappable>(to type: [T.Type], fromKey keyPath: String? = nil) -> SignalProducer<[T]?, MoyaError> {
+        return producer.flatMap(.latest) { response -> SignalProducer<[T]?, Error> in
+            return unwrapOptionalThrowable { try response.map(to: type, fromKey: keyPath) }
+        }
+    }
+}
+
+private func unwrapThrowable<T>(throwable: () throws -> T) -> SignalProducer<T, MoyaError> {
+    do {
+        return SignalProducer(value: try throwable())
+    } catch {
+        return SignalProducer(error: error as! MoyaError)
+    }
+}
+
+private func unwrapOptionalThrowable<T>(throwable: () throws -> T) -> SignalProducer<T?, MoyaError> {
+    do {
+        return SignalProducer(value: try throwable())
+    } catch {
+        return SignalProducer(value: nil)
+    }
+}
