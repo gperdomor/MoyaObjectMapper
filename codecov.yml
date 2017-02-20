@@ -1,0 +1,6 @@
+codecov:
+  branch: master
+
+coverage:
+  ignore:
+    - Tests/*

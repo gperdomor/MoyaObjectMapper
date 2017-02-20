@@ -1,6 +1,7 @@
 import XCTest
+import Quick
 @testable import MoyaModelMapperTests
 
-XCTMain([
-    testCase(MoyaModelMapperTests.allTests),
+Quick.QCKMain([
+    MoyaModelMapperSpec.self
 ])

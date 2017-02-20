@@ -8,15 +8,120 @@
 
 /* Begin PBXBuildFile section */
 		52D6D9871BEFF229002C0205 /* MoyaModelMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* MoyaModelMapper.framework */; };
-		52D6D9981BEFF375002C0205 /* MoyaModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9961BEFF375002C0205 /* MoyaModelMapper.swift */; };
-		52D6D99B1BEFF375002C0205 /* MoyaModelMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9971BEFF375002C0205 /* MoyaModelMapperTests.swift */; };
-		52D6D9EA1BEFFFA4002C0205 /* MoyaModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9961BEFF375002C0205 /* MoyaModelMapper.swift */; };
-		52D6DA091BF00081002C0205 /* MoyaModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9961BEFF375002C0205 /* MoyaModelMapper.swift */; };
-		52D6DA261BF00118002C0205 /* MoyaModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9961BEFF375002C0205 /* MoyaModelMapper.swift */; };
-		DD7502861C68FDDC006590AF /* MoyaModelMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9971BEFF375002C0205 /* MoyaModelMapperTests.swift */; };
+		52D6D99B1BEFF375002C0205 /* MoyaModelMapperSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9971BEFF375002C0205 /* MoyaModelMapperSpec.swift */; };
+		6583C9DA1E5A1D5000DE8528 /* RxMoyaModelMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F56A801E5A17800022936D /* RxMoyaModelMapper.framework */; };
+		6583C9FF1E5A25EA00DE8528 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F56AA01E5A1A020022936D /* RxSwift.framework */; };
+		6583CA001E5A261600DE8528 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568B21E59CC4B0022936D /* Alamofire.framework */; };
+		6583CA071E5A265600DE8528 /* Nimble.framework in Carthage Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 65F26F9B1E596F6A000471FA /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6583CA081E5A265600DE8528 /* Quick.framework in Carthage Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 65F26F9C1E596F6A000471FA /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6583CA0B1E5A268700DE8528 /* RxBlocking.framework in Carthage Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 6583C9F91E5A25B700DE8528 /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6583CA0D1E5A26AC00DE8528 /* RxMoya.framework in Carthage Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 6583C9FA1E5A25B700DE8528 /* RxMoya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6583CA0E1E5A270E00DE8528 /* Alamofire.framework in Carthage Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568B21E59CC4B0022936D /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6583CA0F1E5A271C00DE8528 /* Result.framework in Carthage Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568F31E5A011C0022936D /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6583CA101E5A274700DE8528 /* RxSwift.framework in Carthage Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 65F56AA01E5A1A020022936D /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6583CA111E5A275600DE8528 /* Moya.framework in Carthage Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 65F26F971E5967B0000471FA /* Moya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6583CA121E5A27AC00DE8528 /* Mapper.framework in Carthage Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 65F26F991E596A29000471FA /* Mapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6583CA211E5A2AF700DE8528 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6583CA201E5A2AF700DE8528 /* RxSwift.framework */; };
+		6583CA221E5A2B1800DE8528 /* MoyaModelMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6DA0F1BF000BD002C0205 /* MoyaModelMapper.framework */; };
+		6583CA281E5A2C8700DE8528 /* GithubEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F26FA11E597250000471FA /* GithubEndpoint.swift */; };
+		6583CA291E5A2C8700DE8528 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F26FA31E597268000471FA /* Repository.swift */; };
+		6583CA2B1E5A2C8700DE8528 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568BB1E59F0320022936D /* Alamofire.framework */; };
+		6583CA2C1E5A2C8700DE8528 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568C61E59F0700022936D /* Nimble.framework */; };
+		6583CA2D1E5A2C8700DE8528 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568C71E59F0700022936D /* Quick.framework */; };
+		6583CA3E1E5A2D2B00DE8528 /* RxMoyaModelMapperSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F56A821E5A19030022936D /* RxMoyaModelMapperSpec.swift */; };
+		6583CA3F1E5A2D5600DE8528 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6583CA201E5A2AF700DE8528 /* RxSwift.framework */; };
+		6583CA451E5A2F3E00DE8528 /* Observable+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F26F6D1E595CFF000471FA /* Observable+ModelMapper.swift */; };
+		6583CA5A1E5A304B00DE8528 /* GithubEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F26FA11E597250000471FA /* GithubEndpoint.swift */; };
+		6583CA5B1E5A304B00DE8528 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F26FA31E597268000471FA /* Repository.swift */; };
+		6583CA5D1E5A304B00DE8528 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568CA1E59F3590022936D /* Alamofire.framework */; };
+		6583CA5E1E5A304B00DE8528 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568D41E59F3EF0022936D /* Nimble.framework */; };
+		6583CA5F1E5A304B00DE8528 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568D51E59F3EF0022936D /* Quick.framework */; };
+		6583CA631E5A304B00DE8528 /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 65F569341E5A04D10022936D /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6583CA641E5A304B00DE8528 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 65F568CA1E59F3590022936D /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6583CA6E1E5A325D00DE8528 /* MoyaModelMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D9F01BEFFFBE002C0205 /* MoyaModelMapper.framework */; };
+		6583CA701E5A326D00DE8528 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6583CA6F1E5A326D00DE8528 /* RxSwift.framework */; };
+		6583CA711E5A329A00DE8528 /* RxMoyaModelMapperSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F56A821E5A19030022936D /* RxMoyaModelMapperSpec.swift */; };
+		6583CA761E5A337C00DE8528 /* RxMoyaModelMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6583CA1E1E5A27F500DE8528 /* RxMoyaModelMapper.framework */; };
+		6583CA771E5A33C300DE8528 /* RxMoyaModelMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6583CA531E5A2FA000DE8528 /* RxMoyaModelMapper.framework */; };
+		6583CA781E5A33D000DE8528 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6583CA201E5A2AF700DE8528 /* RxSwift.framework */; };
+		6583CA791E5A33F900DE8528 /* Result.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = 65F5692A1E5A03E50022936D /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6583CA7A1E5A33FB00DE8528 /* Alamofire.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568BB1E59F0320022936D /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6583CA7B1E5A33FD00DE8528 /* Moya.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568BD1E59F0320022936D /* Moya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6583CA7C1E5A340400DE8528 /* RxMoya.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = 6583CA421E5A2D8600DE8528 /* RxMoya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6583CA7D1E5A340800DE8528 /* RxSwift.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = 6583CA201E5A2AF700DE8528 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6583CA7E1E5A341000DE8528 /* RxBlocking.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = 6583CA411E5A2D8600DE8528 /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6583CA7F1E5A341A00DE8528 /* Mapper.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568BC1E59F0320022936D /* Mapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6583CA801E5A341D00DE8528 /* Nimble.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568C61E59F0700022936D /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6583CA811E5A342100DE8528 /* Quick.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568C71E59F0700022936D /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6583CA821E5A348F00DE8528 /* Moya.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 65F568CC1E59F3590022936D /* Moya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6583CA871E5A34C500DE8528 /* RxMoya.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6583CA841E5A34A300DE8528 /* RxMoya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6583CA881E5A34CB00DE8528 /* RxSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6583CA6F1E5A326D00DE8528 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6583CA891E5A34CF00DE8528 /* RxBlocking.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6583CA831E5A34A300DE8528 /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6583CA8A1E5A34DB00DE8528 /* Mapper.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 65F568CB1E59F3590022936D /* Mapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6583CA8B1E5A34DE00DE8528 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 65F568D41E59F3EF0022936D /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6583CA8C1E5A34E000DE8528 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 65F568D51E59F3EF0022936D /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6583CA8D1E5A34F300DE8528 /* Observable+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F26F6D1E595CFF000471FA /* Observable+ModelMapper.swift */; };
+		6583CA9C1E5A36C700DE8528 /* MoyaModelMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D9E21BEFFF6E002C0205 /* MoyaModelMapper.framework */; };
+		6583CA9E1E5A36DC00DE8528 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6583CA9D1E5A36DC00DE8528 /* RxSwift.framework */; };
+		6583CA9F1E5A375700DE8528 /* Observable+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F26F6D1E595CFF000471FA /* Observable+ModelMapper.swift */; };
+		65F26F6E1E595CFF000471FA /* Response+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F26F691E595CFF000471FA /* Response+ModelMapper.swift */; };
+		65F26F6F1E595CFF000471FA /* Response+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F26F691E595CFF000471FA /* Response+ModelMapper.swift */; };
+		65F26F701E595CFF000471FA /* Response+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F26F691E595CFF000471FA /* Response+ModelMapper.swift */; };
+		65F26F711E595CFF000471FA /* Response+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F26F691E595CFF000471FA /* Response+ModelMapper.swift */; };
+		65F26F981E5967B0000471FA /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F26F971E5967B0000471FA /* Moya.framework */; };
+		65F26F9A1E596A29000471FA /* Mapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F26F991E596A29000471FA /* Mapper.framework */; };
+		65F26F9D1E596F6A000471FA /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F26F9B1E596F6A000471FA /* Nimble.framework */; };
+		65F26F9E1E596F6A000471FA /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F26F9C1E596F6A000471FA /* Quick.framework */; };
+		65F26FA21E597250000471FA /* GithubEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F26FA11E597250000471FA /* GithubEndpoint.swift */; };
+		65F26FA41E597268000471FA /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F26FA31E597268000471FA /* Repository.swift */; };
+		65F568BF1E59F0320022936D /* Mapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568BC1E59F0320022936D /* Mapper.framework */; };
+		65F568C01E59F0320022936D /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568BD1E59F0320022936D /* Moya.framework */; };
+		65F568C11E59F0490022936D /* GithubEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F26FA11E597250000471FA /* GithubEndpoint.swift */; };
+		65F568C21E59F04A0022936D /* GithubEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F26FA11E597250000471FA /* GithubEndpoint.swift */; };
+		65F568C31E59F04C0022936D /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F26FA31E597268000471FA /* Repository.swift */; };
+		65F568C41E59F04D0022936D /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F26FA31E597268000471FA /* Repository.swift */; };
+		65F568C51E59F0700022936D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568BB1E59F0320022936D /* Alamofire.framework */; };
+		65F568C81E59F0700022936D /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568C61E59F0700022936D /* Nimble.framework */; };
+		65F568C91E59F0700022936D /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568C71E59F0700022936D /* Quick.framework */; };
+		65F568CD1E59F3590022936D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568CA1E59F3590022936D /* Alamofire.framework */; };
+		65F568CE1E59F3590022936D /* Mapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568CB1E59F3590022936D /* Mapper.framework */; };
+		65F568CF1E59F3590022936D /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568CC1E59F3590022936D /* Moya.framework */; };
+		65F568D61E59F3EF0022936D /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568D41E59F3EF0022936D /* Nimble.framework */; };
+		65F568D71E59F3EF0022936D /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568D51E59F3EF0022936D /* Quick.framework */; };
+		65F568DA1E59F9550022936D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568CA1E59F3590022936D /* Alamofire.framework */; };
+		65F568DF1E59F9AA0022936D /* Mapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568DC1E59F9AA0022936D /* Mapper.framework */; };
+		65F568E01E59F9AA0022936D /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568DD1E59F9AA0022936D /* Moya.framework */; };
+		65F569051E5A02440022936D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568B21E59CC4B0022936D /* Alamofire.framework */; };
+		65F569081E5A02700022936D /* Alamofire.framework in Carthage Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568B21E59CC4B0022936D /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		65F5690B1E5A02700022936D /* Nimble.framework in Carthage Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 65F26F9B1E596F6A000471FA /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		65F5690C1E5A02700022936D /* Quick.framework in Carthage Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 65F26F9C1E596F6A000471FA /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		65F569151E5A02AB0022936D /* Result.framework in Carthage Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568F31E5A011C0022936D /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		65F569161E5A02B80022936D /* Moya.framework in Carthage Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 65F26F971E5967B0000471FA /* Moya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		65F569171E5A02CC0022936D /* Mapper.framework in Carthage Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 65F26F991E596A29000471FA /* Mapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		65F569251E5A03A90022936D /* Alamofire.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568BB1E59F0320022936D /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		65F569261E5A03A90022936D /* Mapper.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568BC1E59F0320022936D /* Mapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		65F569271E5A03A90022936D /* Moya.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568BD1E59F0320022936D /* Moya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		65F569281E5A03A90022936D /* Nimble.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568C61E59F0700022936D /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		65F569291E5A03A90022936D /* Quick.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = 65F568C71E59F0700022936D /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		65F5692B1E5A03E50022936D /* Result.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = 65F5692A1E5A03E50022936D /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		65F5692F1E5A04BD0022936D /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 65F568CA1E59F3590022936D /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		65F569301E5A04BD0022936D /* Mapper.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 65F568CB1E59F3590022936D /* Mapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		65F569311E5A04BD0022936D /* Moya.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 65F568CC1E59F3590022936D /* Moya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		65F569321E5A04BD0022936D /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 65F568D41E59F3EF0022936D /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		65F569331E5A04BD0022936D /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 65F568D51E59F3EF0022936D /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		65F569351E5A04D10022936D /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 65F569341E5A04D10022936D /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		65F56A741E5A17800022936D /* Observable+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F26F6D1E595CFF000471FA /* Observable+ModelMapper.swift */; };
+		65F56A891E5A190A0022936D /* GithubEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F26FA11E597250000471FA /* GithubEndpoint.swift */; };
+		65F56A8A1E5A190A0022936D /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F26FA31E597268000471FA /* Repository.swift */; };
+		65F56A8D1E5A190A0022936D /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F26F9B1E596F6A000471FA /* Nimble.framework */; };
+		65F56A8E1E5A190A0022936D /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F26F9C1E596F6A000471FA /* Quick.framework */; };
+		65F56A9F1E5A19E20022936D /* MoyaModelMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* MoyaModelMapper.framework */; };
+		65F56AA11E5A1A020022936D /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F56AA01E5A1A020022936D /* RxSwift.framework */; };
+		65F56AA21E5A1A4D0022936D /* RxMoyaModelMapperSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F56A821E5A19030022936D /* RxMoyaModelMapperSpec.swift */; };
+		DD7502861C68FDDC006590AF /* MoyaModelMapperSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9971BEFF375002C0205 /* MoyaModelMapperSpec.swift */; };
 		DD7502881C68FEDE006590AF /* MoyaModelMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6DA0F1BF000BD002C0205 /* MoyaModelMapper.framework */; };
 		DD7502921C690C7A006590AF /* MoyaModelMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D9F01BEFFFBE002C0205 /* MoyaModelMapper.framework */; };
-		DD75029A1C690CBE006590AF /* MoyaModelMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9971BEFF375002C0205 /* MoyaModelMapperTests.swift */; };
+		DD75029A1C690CBE006590AF /* MoyaModelMapperSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9971BEFF375002C0205 /* MoyaModelMapperSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +131,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 52D6D97B1BEFF229002C0205;
 			remoteInfo = MoyaModelMapper;
+		};
+		6583CA3C1E5A2D0E00DE8528 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52D6D9731BEFF229002C0205 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6583CA131E5A27F500DE8528;
+			remoteInfo = "RxMoyaModelMapper-macOS";
+		};
+		6583CA741E5A330E00DE8528 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52D6D9731BEFF229002C0205 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6583CA461E5A2FA000DE8528;
+			remoteInfo = "RxMoyaModelMapper-tvOS";
+		};
+		65F56A9D1E5A19AE0022936D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52D6D9731BEFF229002C0205 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65F56A721E5A17800022936D;
+			remoteInfo = "RxMoyaModelMapper-iOS";
 		};
 		DD7502801C68FCFC006590AF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -43,14 +169,163 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6583CA301E5A2C8700DE8528 /* Copy Carthage Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6583CA791E5A33F900DE8528 /* Result.framework in Copy Carthage Frameworks */,
+				6583CA7A1E5A33FB00DE8528 /* Alamofire.framework in Copy Carthage Frameworks */,
+				6583CA7B1E5A33FD00DE8528 /* Moya.framework in Copy Carthage Frameworks */,
+				6583CA7C1E5A340400DE8528 /* RxMoya.framework in Copy Carthage Frameworks */,
+				6583CA7D1E5A340800DE8528 /* RxSwift.framework in Copy Carthage Frameworks */,
+				6583CA7E1E5A341000DE8528 /* RxBlocking.framework in Copy Carthage Frameworks */,
+				6583CA7F1E5A341A00DE8528 /* Mapper.framework in Copy Carthage Frameworks */,
+				6583CA801E5A341D00DE8528 /* Nimble.framework in Copy Carthage Frameworks */,
+				6583CA811E5A342100DE8528 /* Quick.framework in Copy Carthage Frameworks */,
+			);
+			name = "Copy Carthage Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6583CA621E5A304B00DE8528 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6583CA631E5A304B00DE8528 /* Result.framework in CopyFiles */,
+				6583CA641E5A304B00DE8528 /* Alamofire.framework in CopyFiles */,
+				6583CA821E5A348F00DE8528 /* Moya.framework in CopyFiles */,
+				6583CA871E5A34C500DE8528 /* RxMoya.framework in CopyFiles */,
+				6583CA881E5A34CB00DE8528 /* RxSwift.framework in CopyFiles */,
+				6583CA891E5A34CF00DE8528 /* RxBlocking.framework in CopyFiles */,
+				6583CA8A1E5A34DB00DE8528 /* Mapper.framework in CopyFiles */,
+				6583CA8B1E5A34DE00DE8528 /* Nimble.framework in CopyFiles */,
+				6583CA8C1E5A34E000DE8528 /* Quick.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65F568EB1E5A00C00022936D /* Carthage Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				65F569151E5A02AB0022936D /* Result.framework in Carthage Copy Frameworks */,
+				65F569081E5A02700022936D /* Alamofire.framework in Carthage Copy Frameworks */,
+				65F569161E5A02B80022936D /* Moya.framework in Carthage Copy Frameworks */,
+				65F569171E5A02CC0022936D /* Mapper.framework in Carthage Copy Frameworks */,
+				65F5690B1E5A02700022936D /* Nimble.framework in Carthage Copy Frameworks */,
+				65F5690C1E5A02700022936D /* Quick.framework in Carthage Copy Frameworks */,
+			);
+			name = "Carthage Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65F569181E5A033C0022936D /* Copy Carthage Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				65F5692B1E5A03E50022936D /* Result.framework in Copy Carthage Frameworks */,
+				65F569251E5A03A90022936D /* Alamofire.framework in Copy Carthage Frameworks */,
+				65F569261E5A03A90022936D /* Mapper.framework in Copy Carthage Frameworks */,
+				65F569271E5A03A90022936D /* Moya.framework in Copy Carthage Frameworks */,
+				65F569281E5A03A90022936D /* Nimble.framework in Copy Carthage Frameworks */,
+				65F569291E5A03A90022936D /* Quick.framework in Copy Carthage Frameworks */,
+			);
+			name = "Copy Carthage Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65F5692E1E5A04A10022936D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				65F569351E5A04D10022936D /* Result.framework in CopyFiles */,
+				65F5692F1E5A04BD0022936D /* Alamofire.framework in CopyFiles */,
+				65F569301E5A04BD0022936D /* Mapper.framework in CopyFiles */,
+				65F569311E5A04BD0022936D /* Moya.framework in CopyFiles */,
+				65F569321E5A04BD0022936D /* Nimble.framework in CopyFiles */,
+				65F569331E5A04BD0022936D /* Quick.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65F56A911E5A190A0022936D /* Carthage Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6583CA0F1E5A271C00DE8528 /* Result.framework in Carthage Copy Frameworks */,
+				6583CA0E1E5A270E00DE8528 /* Alamofire.framework in Carthage Copy Frameworks */,
+				6583CA111E5A275600DE8528 /* Moya.framework in Carthage Copy Frameworks */,
+				6583CA0D1E5A26AC00DE8528 /* RxMoya.framework in Carthage Copy Frameworks */,
+				6583CA101E5A274700DE8528 /* RxSwift.framework in Carthage Copy Frameworks */,
+				6583CA0B1E5A268700DE8528 /* RxBlocking.framework in Carthage Copy Frameworks */,
+				6583CA121E5A27AC00DE8528 /* Mapper.framework in Carthage Copy Frameworks */,
+				6583CA071E5A265600DE8528 /* Nimble.framework in Carthage Copy Frameworks */,
+				6583CA081E5A265600DE8528 /* Quick.framework in Carthage Copy Frameworks */,
+			);
+			name = "Carthage Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		52D6D97C1BEFF229002C0205 /* MoyaModelMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MoyaModelMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6D9861BEFF229002C0205 /* MoyaModelMapper-iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MoyaModelMapper-iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		52D6D9961BEFF375002C0205 /* MoyaModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoyaModelMapper.swift; path = Sources/MoyaModelMapper.swift; sourceTree = "<group>"; };
-		52D6D9971BEFF375002C0205 /* MoyaModelMapperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoyaModelMapperTests.swift; path = Tests/MoyaModelMapperTests/MoyaModelMapperTests.swift; sourceTree = "<group>"; };
+		52D6D9971BEFF375002C0205 /* MoyaModelMapperSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoyaModelMapperSpec.swift; path = Tests/MoyaModelMapperTests/MoyaModelMapperSpec.swift; sourceTree = "<group>"; };
 		52D6D9E21BEFFF6E002C0205 /* MoyaModelMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MoyaModelMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6D9F01BEFFFBE002C0205 /* MoyaModelMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MoyaModelMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6DA0F1BF000BD002C0205 /* MoyaModelMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MoyaModelMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6583C9F91E5A25B700DE8528 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		6583C9FA1E5A25B700DE8528 /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/iOS/RxMoya.framework; sourceTree = "<group>"; };
+		6583CA1E1E5A27F500DE8528 /* RxMoyaModelMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxMoyaModelMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6583CA201E5A2AF700DE8528 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/Mac/RxSwift.framework; sourceTree = "<group>"; };
+		6583CA3A1E5A2C8700DE8528 /* RxMoyaModelMapper-macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RxMoyaModelMapper-macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6583CA411E5A2D8600DE8528 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/Mac/RxBlocking.framework; sourceTree = "<group>"; };
+		6583CA421E5A2D8600DE8528 /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/Mac/RxMoya.framework; sourceTree = "<group>"; };
+		6583CA531E5A2FA000DE8528 /* RxMoyaModelMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxMoyaModelMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6583CA6C1E5A304B00DE8528 /* RxMoyaModelMapper-tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RxMoyaModelMapper-tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6583CA6F1E5A326D00DE8528 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/tvOS/RxSwift.framework; sourceTree = "<group>"; };
+		6583CA831E5A34A300DE8528 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/tvOS/RxBlocking.framework; sourceTree = "<group>"; };
+		6583CA841E5A34A300DE8528 /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/tvOS/RxMoya.framework; sourceTree = "<group>"; };
+		6583CA9A1E5A364800DE8528 /* RxMoyaModelMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxMoyaModelMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6583CA9D1E5A36DC00DE8528 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/watchOS/RxSwift.framework; sourceTree = "<group>"; };
+		65F26F691E595CFF000471FA /* Response+ModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Response+ModelMapper.swift"; sourceTree = "<group>"; };
+		65F26F6B1E595CFF000471FA /* SignalProducer+ModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignalProducer+ModelMapper.swift"; sourceTree = "<group>"; };
+		65F26F6D1E595CFF000471FA /* Observable+ModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+ModelMapper.swift"; sourceTree = "<group>"; };
+		65F26F971E5967B0000471FA /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
+		65F26F991E596A29000471FA /* Mapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapper.framework; path = Carthage/Build/iOS/Mapper.framework; sourceTree = "<group>"; };
+		65F26F9B1E596F6A000471FA /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		65F26F9C1E596F6A000471FA /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		65F26FA11E597250000471FA /* GithubEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GithubEndpoint.swift; path = Tests/MoyaModelMapperTests/API/GithubEndpoint.swift; sourceTree = "<group>"; };
+		65F26FA31E597268000471FA /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Repository.swift; path = Tests/MoyaModelMapperTests/API/Repository.swift; sourceTree = "<group>"; };
+		65F568B21E59CC4B0022936D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		65F568BB1E59F0320022936D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
+		65F568BC1E59F0320022936D /* Mapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapper.framework; path = Carthage/Build/Mac/Mapper.framework; sourceTree = "<group>"; };
+		65F568BD1E59F0320022936D /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/Mac/Moya.framework; sourceTree = "<group>"; };
+		65F568C61E59F0700022936D /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
+		65F568C71E59F0700022936D /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
+		65F568CA1E59F3590022936D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/tvOS/Alamofire.framework; sourceTree = "<group>"; };
+		65F568CB1E59F3590022936D /* Mapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapper.framework; path = Carthage/Build/tvOS/Mapper.framework; sourceTree = "<group>"; };
+		65F568CC1E59F3590022936D /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/tvOS/Moya.framework; sourceTree = "<group>"; };
+		65F568D41E59F3EF0022936D /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/tvOS/Nimble.framework; sourceTree = "<group>"; };
+		65F568D51E59F3EF0022936D /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/tvOS/Quick.framework; sourceTree = "<group>"; };
+		65F568DB1E59F9AA0022936D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/watchOS/Alamofire.framework; sourceTree = "<group>"; };
+		65F568DC1E59F9AA0022936D /* Mapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapper.framework; path = Carthage/Build/watchOS/Mapper.framework; sourceTree = "<group>"; };
+		65F568DD1E59F9AA0022936D /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/watchOS/Moya.framework; sourceTree = "<group>"; };
+		65F568F31E5A011C0022936D /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		65F5692A1E5A03E50022936D /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
+		65F569341E5A04D10022936D /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/tvOS/Result.framework; sourceTree = "<group>"; };
+		65F56A801E5A17800022936D /* RxMoyaModelMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxMoyaModelMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65F56A821E5A19030022936D /* RxMoyaModelMapperSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RxMoyaModelMapperSpec.swift; path = Tests/RxModelMapperTests/RxMoyaModelMapperSpec.swift; sourceTree = "<group>"; };
+		65F56A9B1E5A190A0022936D /* RxMoyaModelMapper-iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RxMoyaModelMapper-iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65F56AA01E5A1A020022936D /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		AD2FAA261CD0B6D800659CF4 /* MoyaModelMapper.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MoyaModelMapper.plist; sourceTree = "<group>"; };
 		AD2FAA281CD0B6E100659CF4 /* MoyaModelMapperTests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MoyaModelMapperTests.plist; sourceTree = "<group>"; };
 		DD75027A1C68FCFC006590AF /* MoyaModelMapper-macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MoyaModelMapper-macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +337,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65F26F9A1E596A29000471FA /* Mapper.framework in Frameworks */,
+				65F26F981E5967B0000471FA /* Moya.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +346,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65F569051E5A02440022936D /* Alamofire.framework in Frameworks */,
+				65F26F9D1E596F6A000471FA /* Nimble.framework in Frameworks */,
+				65F26F9E1E596F6A000471FA /* Quick.framework in Frameworks */,
 				52D6D9871BEFF229002C0205 /* MoyaModelMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,6 +357,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65F568DF1E59F9AA0022936D /* Mapper.framework in Frameworks */,
+				65F568E01E59F9AA0022936D /* Moya.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +366,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65F568CD1E59F3590022936D /* Alamofire.framework in Frameworks */,
+				65F568CE1E59F3590022936D /* Mapper.framework in Frameworks */,
+				65F568CF1E59F3590022936D /* Moya.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +376,80 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65F568BF1E59F0320022936D /* Mapper.framework in Frameworks */,
+				65F568C01E59F0320022936D /* Moya.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6583CA161E5A27F500DE8528 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6583CA221E5A2B1800DE8528 /* MoyaModelMapper.framework in Frameworks */,
+				6583CA211E5A2AF700DE8528 /* RxSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6583CA2A1E5A2C8700DE8528 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6583CA2B1E5A2C8700DE8528 /* Alamofire.framework in Frameworks */,
+				6583CA2C1E5A2C8700DE8528 /* Nimble.framework in Frameworks */,
+				6583CA2D1E5A2C8700DE8528 /* Quick.framework in Frameworks */,
+				6583CA3F1E5A2D5600DE8528 /* RxSwift.framework in Frameworks */,
+				6583CA761E5A337C00DE8528 /* RxMoyaModelMapper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6583CA491E5A2FA000DE8528 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6583CA701E5A326D00DE8528 /* RxSwift.framework in Frameworks */,
+				6583CA6E1E5A325D00DE8528 /* MoyaModelMapper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6583CA5C1E5A304B00DE8528 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6583CA5D1E5A304B00DE8528 /* Alamofire.framework in Frameworks */,
+				6583CA5E1E5A304B00DE8528 /* Nimble.framework in Frameworks */,
+				6583CA5F1E5A304B00DE8528 /* Quick.framework in Frameworks */,
+				6583CA781E5A33D000DE8528 /* RxSwift.framework in Frameworks */,
+				6583CA771E5A33C300DE8528 /* RxMoyaModelMapper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6583CA911E5A364800DE8528 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6583CA9E1E5A36DC00DE8528 /* RxSwift.framework in Frameworks */,
+				6583CA9C1E5A36C700DE8528 /* MoyaModelMapper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65F56A771E5A17800022936D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65F56A9F1E5A19E20022936D /* MoyaModelMapper.framework in Frameworks */,
+				65F56AA11E5A1A020022936D /* RxSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65F56A8B1E5A190A0022936D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6583CA001E5A261600DE8528 /* Alamofire.framework in Frameworks */,
+				65F56A8D1E5A190A0022936D /* Nimble.framework in Frameworks */,
+				65F56A8E1E5A190A0022936D /* Quick.framework in Frameworks */,
+				6583C9FF1E5A25EA00DE8528 /* RxSwift.framework in Frameworks */,
+				6583C9DA1E5A1D5000DE8528 /* RxMoyaModelMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +457,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65F568C51E59F0700022936D /* Alamofire.framework in Frameworks */,
+				65F568C81E59F0700022936D /* Nimble.framework in Frameworks */,
+				65F568C91E59F0700022936D /* Quick.framework in Frameworks */,
 				DD7502881C68FEDE006590AF /* MoyaModelMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,6 +468,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65F568DA1E59F9550022936D /* Alamofire.framework in Frameworks */,
+				65F568D61E59F3EF0022936D /* Nimble.framework in Frameworks */,
+				65F568D71E59F3EF0022936D /* Quick.framework in Frameworks */,
 				DD7502921C690C7A006590AF /* MoyaModelMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,10 +481,11 @@
 		52D6D9721BEFF229002C0205 = {
 			isa = PBXGroup;
 			children = (
-				52D6D9961BEFF375002C0205 /* MoyaModelMapper.swift */,
-				52D6D9971BEFF375002C0205 /* MoyaModelMapperTests.swift */,
+				65F26F7A1E595D0C000471FA /* Sources */,
+				65F26F951E595DAF000471FA /* Tests */,
 				52D6D99C1BEFF38C002C0205 /* Configs */,
 				52D6D97D1BEFF229002C0205 /* Products */,
+				65F26F961E5967AF000471FA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,6 +499,13 @@
 				52D6DA0F1BF000BD002C0205 /* MoyaModelMapper.framework */,
 				DD75027A1C68FCFC006590AF /* MoyaModelMapper-macOS Tests.xctest */,
 				DD75028D1C690C7A006590AF /* MoyaModelMapper-tvOS Tests.xctest */,
+				65F56A801E5A17800022936D /* RxMoyaModelMapper.framework */,
+				65F56A9B1E5A190A0022936D /* RxMoyaModelMapper-iOS Tests.xctest */,
+				6583CA1E1E5A27F500DE8528 /* RxMoyaModelMapper.framework */,
+				6583CA3A1E5A2C8700DE8528 /* RxMoyaModelMapper-macOS Tests.xctest */,
+				6583CA531E5A2FA000DE8528 /* RxMoyaModelMapper.framework */,
+				6583CA6C1E5A304B00DE8528 /* RxMoyaModelMapper-tvOS Tests.xctest */,
+				6583CA9A1E5A364800DE8528 /* RxMoyaModelMapper.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,6 +517,132 @@
 				DD7502731C68FC20006590AF /* Tests */,
 			);
 			path = Configs;
+			sourceTree = "<group>";
+		};
+		65F26F681E595CFF000471FA /* MoyaModelMapper */ = {
+			isa = PBXGroup;
+			children = (
+				65F26F691E595CFF000471FA /* Response+ModelMapper.swift */,
+			);
+			name = MoyaModelMapper;
+			path = Sources/MoyaModelMapper;
+			sourceTree = "<group>";
+		};
+		65F26F6A1E595CFF000471FA /* ReactiveMoyaModelMapper */ = {
+			isa = PBXGroup;
+			children = (
+				65F26F6B1E595CFF000471FA /* SignalProducer+ModelMapper.swift */,
+			);
+			name = ReactiveMoyaModelMapper;
+			path = Sources/ReactiveMoyaModelMapper;
+			sourceTree = "<group>";
+		};
+		65F26F6C1E595CFF000471FA /* RxMoyaModelMapper */ = {
+			isa = PBXGroup;
+			children = (
+				65F26F6D1E595CFF000471FA /* Observable+ModelMapper.swift */,
+			);
+			name = RxMoyaModelMapper;
+			path = Sources/RxMoyaModelMapper;
+			sourceTree = "<group>";
+		};
+		65F26F7A1E595D0C000471FA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				65F26F681E595CFF000471FA /* MoyaModelMapper */,
+				65F26F6A1E595CFF000471FA /* ReactiveMoyaModelMapper */,
+				65F26F6C1E595CFF000471FA /* RxMoyaModelMapper */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		65F26F951E595DAF000471FA /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				65F56A821E5A19030022936D /* RxMoyaModelMapperSpec.swift */,
+				65F26FA01E59723A000471FA /* API */,
+				52D6D9971BEFF375002C0205 /* MoyaModelMapperSpec.swift */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		65F26F961E5967AF000471FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6583CA9D1E5A36DC00DE8528 /* RxSwift.framework */,
+				65F568D01E59F3610022936D /* iOS */,
+				65F568D21E59F36C0022936D /* macOS */,
+				65F568D11E59F3670022936D /* tvOS */,
+				65F568D31E59F36F0022936D /* watchOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		65F26FA01E59723A000471FA /* API */ = {
+			isa = PBXGroup;
+			children = (
+				65F26FA11E597250000471FA /* GithubEndpoint.swift */,
+				65F26FA31E597268000471FA /* Repository.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		65F568D01E59F3610022936D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				65F568B21E59CC4B0022936D /* Alamofire.framework */,
+				65F26F991E596A29000471FA /* Mapper.framework */,
+				65F26F971E5967B0000471FA /* Moya.framework */,
+				65F26F9B1E596F6A000471FA /* Nimble.framework */,
+				65F26F9C1E596F6A000471FA /* Quick.framework */,
+				65F568F31E5A011C0022936D /* Result.framework */,
+				6583C9F91E5A25B700DE8528 /* RxBlocking.framework */,
+				6583C9FA1E5A25B700DE8528 /* RxMoya.framework */,
+				65F56AA01E5A1A020022936D /* RxSwift.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		65F568D11E59F3670022936D /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				65F568CA1E59F3590022936D /* Alamofire.framework */,
+				65F568CB1E59F3590022936D /* Mapper.framework */,
+				65F568CC1E59F3590022936D /* Moya.framework */,
+				65F568D41E59F3EF0022936D /* Nimble.framework */,
+				65F568D51E59F3EF0022936D /* Quick.framework */,
+				65F569341E5A04D10022936D /* Result.framework */,
+				6583CA831E5A34A300DE8528 /* RxBlocking.framework */,
+				6583CA841E5A34A300DE8528 /* RxMoya.framework */,
+				6583CA6F1E5A326D00DE8528 /* RxSwift.framework */,
+			);
+			name = tvOS;
+			sourceTree = "<group>";
+		};
+		65F568D21E59F36C0022936D /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				65F568BB1E59F0320022936D /* Alamofire.framework */,
+				65F568BC1E59F0320022936D /* Mapper.framework */,
+				65F568BD1E59F0320022936D /* Moya.framework */,
+				65F568C61E59F0700022936D /* Nimble.framework */,
+				65F568C71E59F0700022936D /* Quick.framework */,
+				65F5692A1E5A03E50022936D /* Result.framework */,
+				6583CA411E5A2D8600DE8528 /* RxBlocking.framework */,
+				6583CA421E5A2D8600DE8528 /* RxMoya.framework */,
+				6583CA201E5A2AF700DE8528 /* RxSwift.framework */,
+			);
+			name = macOS;
+			sourceTree = "<group>";
+		};
+		65F568D31E59F36F0022936D /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				65F568DB1E59F9AA0022936D /* Alamofire.framework */,
+				65F568DC1E59F9AA0022936D /* Mapper.framework */,
+				65F568DD1E59F9AA0022936D /* Moya.framework */,
+			);
+			name = watchOS;
 			sourceTree = "<group>";
 		};
 		DD7502721C68FC1B006590AF /* Frameworks */ = {
@@ -193,6 +692,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6583CA191E5A27F500DE8528 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6583CA4D1E5A2FA000DE8528 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6583CA941E5A364800DE8528 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65F56A7A1E5A17800022936D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -221,6 +748,7 @@
 				52D6D9821BEFF229002C0205 /* Sources */,
 				52D6D9831BEFF229002C0205 /* Frameworks */,
 				52D6D9841BEFF229002C0205 /* Resources */,
+				65F568EB1E5A00C00022936D /* Carthage Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -240,6 +768,7 @@
 				52D6D9DE1BEFFF6E002C0205 /* Frameworks */,
 				52D6D9DF1BEFFF6E002C0205 /* Headers */,
 				52D6D9E01BEFFF6E002C0205 /* Resources */,
+				65F5692C1E5A04150022936D /* Carthage Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,6 +787,7 @@
 				52D6D9EC1BEFFFBE002C0205 /* Frameworks */,
 				52D6D9ED1BEFFFBE002C0205 /* Headers */,
 				52D6D9EE1BEFFFBE002C0205 /* Resources */,
+				65F5692D1E5A046D0022936D /* Carthage Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -286,6 +816,136 @@
 			productReference = 52D6DA0F1BF000BD002C0205 /* MoyaModelMapper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		6583CA131E5A27F500DE8528 /* RxMoyaModelMapper-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6583CA1B1E5A27F500DE8528 /* Build configuration list for PBXNativeTarget "RxMoyaModelMapper-macOS" */;
+			buildPhases = (
+				6583CA141E5A27F500DE8528 /* Sources */,
+				6583CA161E5A27F500DE8528 /* Frameworks */,
+				6583CA191E5A27F500DE8528 /* Headers */,
+				6583CA1A1E5A27F500DE8528 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RxMoyaModelMapper-macOS";
+			productName = "MoyaModelMapper-macOS";
+			productReference = 6583CA1E1E5A27F500DE8528 /* RxMoyaModelMapper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6583CA231E5A2C8700DE8528 /* RxMoyaModelMapper-macOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6583CA371E5A2C8700DE8528 /* Build configuration list for PBXNativeTarget "RxMoyaModelMapper-macOS Tests" */;
+			buildPhases = (
+				6583CA261E5A2C8700DE8528 /* Sources */,
+				6583CA2A1E5A2C8700DE8528 /* Frameworks */,
+				6583CA2F1E5A2C8700DE8528 /* Resources */,
+				6583CA301E5A2C8700DE8528 /* Copy Carthage Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6583CA3D1E5A2D0E00DE8528 /* PBXTargetDependency */,
+			);
+			name = "RxMoyaModelMapper-macOS Tests";
+			productName = "MoyaModelMapper-OS Tests";
+			productReference = 6583CA3A1E5A2C8700DE8528 /* RxMoyaModelMapper-macOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6583CA461E5A2FA000DE8528 /* RxMoyaModelMapper-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6583CA501E5A2FA000DE8528 /* Build configuration list for PBXNativeTarget "RxMoyaModelMapper-tvOS" */;
+			buildPhases = (
+				6583CA471E5A2FA000DE8528 /* Sources */,
+				6583CA491E5A2FA000DE8528 /* Frameworks */,
+				6583CA4D1E5A2FA000DE8528 /* Headers */,
+				6583CA4E1E5A2FA000DE8528 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RxMoyaModelMapper-tvOS";
+			productName = "MoyaModelMapper-tvOS";
+			productReference = 6583CA531E5A2FA000DE8528 /* RxMoyaModelMapper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6583CA551E5A304B00DE8528 /* RxMoyaModelMapper-tvOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6583CA691E5A304B00DE8528 /* Build configuration list for PBXNativeTarget "RxMoyaModelMapper-tvOS Tests" */;
+			buildPhases = (
+				6583CA581E5A304B00DE8528 /* Sources */,
+				6583CA5C1E5A304B00DE8528 /* Frameworks */,
+				6583CA611E5A304B00DE8528 /* Resources */,
+				6583CA621E5A304B00DE8528 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6583CA751E5A330E00DE8528 /* PBXTargetDependency */,
+			);
+			name = "RxMoyaModelMapper-tvOS Tests";
+			productName = "MoyaModelMapper-tvOS Tests";
+			productReference = 6583CA6C1E5A304B00DE8528 /* RxMoyaModelMapper-tvOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6583CA8E1E5A364800DE8528 /* RxMoyaModelMapper-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6583CA971E5A364800DE8528 /* Build configuration list for PBXNativeTarget "RxMoyaModelMapper-watchOS" */;
+			buildPhases = (
+				6583CA8F1E5A364800DE8528 /* Sources */,
+				6583CA911E5A364800DE8528 /* Frameworks */,
+				6583CA941E5A364800DE8528 /* Headers */,
+				6583CA951E5A364800DE8528 /* Resources */,
+				6583CA961E5A364800DE8528 /* Carthage Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RxMoyaModelMapper-watchOS";
+			productName = "MoyaModelMapper-watchOS";
+			productReference = 6583CA9A1E5A364800DE8528 /* RxMoyaModelMapper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		65F56A721E5A17800022936D /* RxMoyaModelMapper-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65F56A7D1E5A17800022936D /* Build configuration list for PBXNativeTarget "RxMoyaModelMapper-iOS" */;
+			buildPhases = (
+				65F56A731E5A17800022936D /* Sources */,
+				65F56A771E5A17800022936D /* Frameworks */,
+				65F56A7A1E5A17800022936D /* Headers */,
+				65F56A7B1E5A17800022936D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RxMoyaModelMapper-iOS";
+			productName = MoyaModelMapper;
+			productReference = 65F56A801E5A17800022936D /* RxMoyaModelMapper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		65F56A841E5A190A0022936D /* RxMoyaModelMapper-iOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65F56A981E5A190A0022936D /* Build configuration list for PBXNativeTarget "RxMoyaModelMapper-iOS Tests" */;
+			buildPhases = (
+				65F56A871E5A190A0022936D /* Sources */,
+				65F56A8B1E5A190A0022936D /* Frameworks */,
+				65F56A901E5A190A0022936D /* Resources */,
+				65F56A911E5A190A0022936D /* Carthage Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65F56A9E1E5A19AE0022936D /* PBXTargetDependency */,
+			);
+			name = "RxMoyaModelMapper-iOS Tests";
+			productName = MoyaModelMapperTests;
+			productReference = 65F56A9B1E5A190A0022936D /* RxMoyaModelMapper-iOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		DD7502791C68FCFC006590AF /* MoyaModelMapper-macOS Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD7502821C68FCFC006590AF /* Build configuration list for PBXNativeTarget "MoyaModelMapper-macOS Tests" */;
@@ -293,6 +953,7 @@
 				DD7502761C68FCFC006590AF /* Sources */,
 				DD7502771C68FCFC006590AF /* Frameworks */,
 				DD7502781C68FCFC006590AF /* Resources */,
+				65F569181E5A033C0022936D /* Copy Carthage Frameworks */,
 			);
 			buildRules = (
 			);
@@ -311,6 +972,7 @@
 				DD7502891C690C7A006590AF /* Sources */,
 				DD75028A1C690C7A006590AF /* Frameworks */,
 				DD75028B1C690C7A006590AF /* Resources */,
+				65F5692E1E5A04A10022936D /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -330,7 +992,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0810;
-				ORGANIZATIONNAME = "MoyaModelMapper";
+				ORGANIZATIONNAME = MoyaModelMapper;
 				TargetAttributes = {
 					52D6D97B1BEFF229002C0205 = {
 						CreatedOnToolsVersion = 7.1;
@@ -376,11 +1038,18 @@
 			targets = (
 				52D6D97B1BEFF229002C0205 /* MoyaModelMapper-iOS */,
 				52D6DA0E1BF000BD002C0205 /* MoyaModelMapper-macOS */,
-				52D6D9E11BEFFF6E002C0205 /* MoyaModelMapper-watchOS */,
 				52D6D9EF1BEFFFBE002C0205 /* MoyaModelMapper-tvOS */,
+				52D6D9E11BEFFF6E002C0205 /* MoyaModelMapper-watchOS */,
+				65F56A721E5A17800022936D /* RxMoyaModelMapper-iOS */,
+				6583CA131E5A27F500DE8528 /* RxMoyaModelMapper-macOS */,
+				6583CA461E5A2FA000DE8528 /* RxMoyaModelMapper-tvOS */,
+				6583CA8E1E5A364800DE8528 /* RxMoyaModelMapper-watchOS */,
 				52D6D9851BEFF229002C0205 /* MoyaModelMapper-iOS Tests */,
 				DD7502791C68FCFC006590AF /* MoyaModelMapper-macOS Tests */,
 				DD75028C1C690C7A006590AF /* MoyaModelMapper-tvOS Tests */,
+				65F56A841E5A190A0022936D /* RxMoyaModelMapper-iOS Tests */,
+				6583CA231E5A2C8700DE8528 /* RxMoyaModelMapper-macOS Tests */,
+				6583CA551E5A304B00DE8528 /* RxMoyaModelMapper-tvOS Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -421,6 +1090,55 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6583CA1A1E5A27F500DE8528 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6583CA2F1E5A2C8700DE8528 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6583CA4E1E5A2FA000DE8528 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6583CA611E5A304B00DE8528 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6583CA951E5A364800DE8528 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65F56A7B1E5A17800022936D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65F56A901E5A190A0022936D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DD7502781C68FCFC006590AF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -437,12 +1155,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6583CA961E5A364800DE8528 /* Carthage Copy Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/watchOS/Mapper.framework",
+				"$(SRCROOT)/Carthage/Build/watchOS/Moya.framework",
+			);
+			name = "Carthage Copy Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		65F5692C1E5A04150022936D /* Carthage Copy Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/watchOS/Mapper.framework",
+				"$(SRCROOT)/Carthage/Build/watchOS/Moya.framework",
+			);
+			name = "Carthage Copy Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		65F5692D1E5A046D0022936D /* Carthage Copy Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/tvOS/Mapper.framework",
+				"$(SRCROOT)/Carthage/Build/tvOS/Moya.framework",
+			);
+			name = "Carthage Copy Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		52D6D9771BEFF229002C0205 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52D6D9981BEFF375002C0205 /* MoyaModelMapper.swift in Sources */,
+				65F26F6E1E595CFF000471FA /* Response+ModelMapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,7 +1219,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52D6D99B1BEFF375002C0205 /* MoyaModelMapperTests.swift in Sources */,
+				52D6D99B1BEFF375002C0205 /* MoyaModelMapperSpec.swift in Sources */,
+				65F26FA21E597250000471FA /* GithubEndpoint.swift in Sources */,
+				65F26FA41E597268000471FA /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,7 +1229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52D6D9EA1BEFFFA4002C0205 /* MoyaModelMapper.swift in Sources */,
+				65F26F701E595CFF000471FA /* Response+ModelMapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,7 +1237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52D6DA091BF00081002C0205 /* MoyaModelMapper.swift in Sources */,
+				65F26F711E595CFF000471FA /* Response+ModelMapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,7 +1245,69 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52D6DA261BF00118002C0205 /* MoyaModelMapper.swift in Sources */,
+				65F26F6F1E595CFF000471FA /* Response+ModelMapper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6583CA141E5A27F500DE8528 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6583CA451E5A2F3E00DE8528 /* Observable+ModelMapper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6583CA261E5A2C8700DE8528 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6583CA281E5A2C8700DE8528 /* GithubEndpoint.swift in Sources */,
+				6583CA291E5A2C8700DE8528 /* Repository.swift in Sources */,
+				6583CA3E1E5A2D2B00DE8528 /* RxMoyaModelMapperSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6583CA471E5A2FA000DE8528 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6583CA8D1E5A34F300DE8528 /* Observable+ModelMapper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6583CA581E5A304B00DE8528 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6583CA5A1E5A304B00DE8528 /* GithubEndpoint.swift in Sources */,
+				6583CA5B1E5A304B00DE8528 /* Repository.swift in Sources */,
+				6583CA711E5A329A00DE8528 /* RxMoyaModelMapperSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6583CA8F1E5A364800DE8528 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6583CA9F1E5A375700DE8528 /* Observable+ModelMapper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65F56A731E5A17800022936D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65F56A741E5A17800022936D /* Observable+ModelMapper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65F56A871E5A190A0022936D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65F56A891E5A190A0022936D /* GithubEndpoint.swift in Sources */,
+				65F56A8A1E5A190A0022936D /* Repository.swift in Sources */,
+				65F56AA21E5A1A4D0022936D /* RxMoyaModelMapperSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,7 +1315,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD7502861C68FDDC006590AF /* MoyaModelMapperTests.swift in Sources */,
+				DD7502861C68FDDC006590AF /* MoyaModelMapperSpec.swift in Sources */,
+				65F568C11E59F0490022936D /* GithubEndpoint.swift in Sources */,
+				65F568C31E59F04C0022936D /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,7 +1325,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD75029A1C690CBE006590AF /* MoyaModelMapperTests.swift in Sources */,
+				DD75029A1C690CBE006590AF /* MoyaModelMapperSpec.swift in Sources */,
+				65F568C21E59F04A0022936D /* GithubEndpoint.swift in Sources */,
+				65F568C41E59F04D0022936D /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +1338,21 @@
 			isa = PBXTargetDependency;
 			target = 52D6D97B1BEFF229002C0205 /* MoyaModelMapper-iOS */;
 			targetProxy = 52D6D9881BEFF229002C0205 /* PBXContainerItemProxy */;
+		};
+		6583CA3D1E5A2D0E00DE8528 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6583CA131E5A27F500DE8528 /* RxMoyaModelMapper-macOS */;
+			targetProxy = 6583CA3C1E5A2D0E00DE8528 /* PBXContainerItemProxy */;
+		};
+		6583CA751E5A330E00DE8528 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6583CA461E5A2FA000DE8528 /* RxMoyaModelMapper-tvOS */;
+			targetProxy = 6583CA741E5A330E00DE8528 /* PBXContainerItemProxy */;
+		};
+		65F56A9E1E5A19AE0022936D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65F56A721E5A17800022936D /* RxMoyaModelMapper-iOS */;
+			targetProxy = 65F56A9D1E5A19AE0022936D /* PBXContainerItemProxy */;
 		};
 		DD7502811C68FCFC006590AF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -620,12 +1472,16 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Configs/MoyaModelMapper.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.MoyaModelMapper.MoyaModelMapper-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gperdomor.MoyaModelMapper-iOS";
 				PRODUCT_NAME = MoyaModelMapper;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -643,11 +1499,15 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Configs/MoyaModelMapper.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.MoyaModelMapper.MoyaModelMapper-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gperdomor.MoyaModelMapper-iOS";
 				PRODUCT_NAME = MoyaModelMapper;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -659,9 +1519,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Configs/MoyaModelMapperTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.MoyaModelMapper.MoyaModelMapper-iOS-Tests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gperdomor.MoyaModelMapper-iOS-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -672,9 +1536,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Configs/MoyaModelMapperTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.MoyaModelMapper.MoyaModelMapper-iOS-Tests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gperdomor.MoyaModelMapper-iOS-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
@@ -690,16 +1558,20 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
 				INFOPLIST_FILE = Configs/MoyaModelMapper.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.MoyaModelMapper.MoyaModelMapper-watchOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gperdomor.MoyaModelMapper-watchOS";
 				PRODUCT_NAME = MoyaModelMapper;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
 			};
 			name = Debug;
 		};
@@ -712,17 +1584,21 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
 				INFOPLIST_FILE = Configs/MoyaModelMapper.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.MoyaModelMapper.MoyaModelMapper-watchOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gperdomor.MoyaModelMapper-watchOS";
 				PRODUCT_NAME = MoyaModelMapper;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
 			};
 			name = Release;
 		};
@@ -735,10 +1611,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = Configs/MoyaModelMapper.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.MoyaModelMapper.MoyaModelMapper-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gperdomor.MoyaModelMapper-tvOS";
 				PRODUCT_NAME = MoyaModelMapper;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
@@ -757,10 +1637,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = Configs/MoyaModelMapper.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.MoyaModelMapper.MoyaModelMapper-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gperdomor.MoyaModelMapper-tvOS";
 				PRODUCT_NAME = MoyaModelMapper;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
@@ -781,12 +1665,16 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Configs/MoyaModelMapper.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.MoyaModelMapper.MoyaModelMapper-macOS";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gperdomor.MoyaModelMapper-macOS";
 				PRODUCT_NAME = MoyaModelMapper;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -804,15 +1692,343 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Configs/MoyaModelMapper.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.MoyaModelMapper.MoyaModelMapper-macOS";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gperdomor.MoyaModelMapper-macOS";
 				PRODUCT_NAME = MoyaModelMapper;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		6583CA1C1E5A27F500DE8528 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Configs/MoyaModelMapper.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gperdomor.RxMoyaModelMapper-macOS";
+				PRODUCT_NAME = RxMoyaModelMapper;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6583CA1D1E5A27F500DE8528 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Configs/MoyaModelMapper.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gperdomor.RxMoyaModelMapper-macOS";
+				PRODUCT_NAME = RxMoyaModelMapper;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		6583CA381E5A2C8700DE8528 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = Configs/MoyaModelMapperTests.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gperdomor.MoyaModelMapper-macOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6583CA391E5A2C8700DE8528 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = Configs/MoyaModelMapperTests.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gperdomor.MoyaModelMapper-macOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		6583CA511E5A2FA000DE8528 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = Configs/MoyaModelMapper.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gperdomor.RxMoyaModelMapper-tvOS";
+				PRODUCT_NAME = RxMoyaModelMapper;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		6583CA521E5A2FA000DE8528 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = Configs/MoyaModelMapper.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gperdomor.RxMoyaModelMapper-tvOS";
+				PRODUCT_NAME = RxMoyaModelMapper;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		6583CA6A1E5A304B00DE8528 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = Configs/MoyaModelMapperTests.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gperdomor.RxMoyaModelMapper-tvOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		6583CA6B1E5A304B00DE8528 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = Configs/MoyaModelMapperTests.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gperdomor.RxMoyaModelMapper-tvOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
+		6583CA981E5A364800DE8528 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
+				INFOPLIST_FILE = Configs/MoyaModelMapper.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gperdomor.MoyaModelMapper-watchOS";
+				PRODUCT_NAME = RxMoyaModelMapper;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		6583CA991E5A364800DE8528 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
+				INFOPLIST_FILE = Configs/MoyaModelMapper.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gperdomor.MoyaModelMapper-watchOS";
+				PRODUCT_NAME = RxMoyaModelMapper;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		65F56A7E1E5A17800022936D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Configs/MoyaModelMapper.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gperdomor.RxMoyaModelMapper-iOS";
+				PRODUCT_NAME = RxMoyaModelMapper;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		65F56A7F1E5A17800022936D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Configs/MoyaModelMapper.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gperdomor.RxMoyaModelMapper-iOS";
+				PRODUCT_NAME = RxMoyaModelMapper;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		65F56A991E5A190A0022936D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Configs/MoyaModelMapperTests.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gperdomorr.RxMoyaModelMapper-iOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		65F56A9A1E5A190A0022936D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Configs/MoyaModelMapperTests.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gperdomorr.RxMoyaModelMapper-iOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 			};
@@ -823,10 +2039,14 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = Configs/MoyaModelMapperTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.MoyaModelMapper.MoyaModelMapper-macOS-Tests";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gperdomor.MoyaModelMapper-macOS-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 3.0;
@@ -838,10 +2058,14 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = Configs/MoyaModelMapperTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.MoyaModelMapper.MoyaModelMapper-macOS-Tests";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gperdomor.MoyaModelMapper-macOS-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -852,9 +2076,13 @@
 		DD7502961C690C7A006590AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = Configs/MoyaModelMapperTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.MoyaModelMapper.MoyaModelMapper-tvOS-Tests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gperdomor.MoyaModelMapper-tvOS-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_VERSION = 3.0;
@@ -865,9 +2093,13 @@
 		DD7502971C690C7A006590AF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = Configs/MoyaModelMapperTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.MoyaModelMapper.MoyaModelMapper-tvOS-Tests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gperdomor.MoyaModelMapper-tvOS-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -929,6 +2161,69 @@
 			buildConfigurations = (
 				52D6DA211BF000BD002C0205 /* Debug */,
 				52D6DA221BF000BD002C0205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6583CA1B1E5A27F500DE8528 /* Build configuration list for PBXNativeTarget "RxMoyaModelMapper-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6583CA1C1E5A27F500DE8528 /* Debug */,
+				6583CA1D1E5A27F500DE8528 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6583CA371E5A2C8700DE8528 /* Build configuration list for PBXNativeTarget "RxMoyaModelMapper-macOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6583CA381E5A2C8700DE8528 /* Debug */,
+				6583CA391E5A2C8700DE8528 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6583CA501E5A2FA000DE8528 /* Build configuration list for PBXNativeTarget "RxMoyaModelMapper-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6583CA511E5A2FA000DE8528 /* Debug */,
+				6583CA521E5A2FA000DE8528 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6583CA691E5A304B00DE8528 /* Build configuration list for PBXNativeTarget "RxMoyaModelMapper-tvOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6583CA6A1E5A304B00DE8528 /* Debug */,
+				6583CA6B1E5A304B00DE8528 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6583CA971E5A364800DE8528 /* Build configuration list for PBXNativeTarget "RxMoyaModelMapper-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6583CA981E5A364800DE8528 /* Debug */,
+				6583CA991E5A364800DE8528 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65F56A7D1E5A17800022936D /* Build configuration list for PBXNativeTarget "RxMoyaModelMapper-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65F56A7E1E5A17800022936D /* Debug */,
+				65F56A7F1E5A17800022936D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65F56A981E5A190A0022936D /* Build configuration list for PBXNativeTarget "RxMoyaModelMapper-iOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65F56A991E5A190A0022936D /* Debug */,
+				65F56A9A1E5A190A0022936D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

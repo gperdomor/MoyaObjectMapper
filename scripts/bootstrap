@@ -1,0 +1,16 @@
+#!/bin/bash
+
+if ! command -v carthage > /dev/null; then
+  printf 'Carthage is not installed.\n'
+  printf 'See https://github.com/Carthage/Carthage for install instructions.\n'
+  exit 1
+fi
+
+if [[ $PLATFORM == "" ]];
+then
+    PLATFORM_ARGS="";
+else
+    PLATFORM_ARGS="--platform $PLATFORM";
+fi
+
+carthage bootstrap $@ $PLATFORM_ARGS || exit $?
