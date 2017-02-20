@@ -6,8 +6,8 @@ target 'Demo' do
   use_frameworks!
 
   # Pods for Demo
-  pod 'MoyaModelMapper', :path => "../"
-  pod 'MoyaModelMapper/RxSwift', :path => "../"
+  pod 'MoyaObjectMapper', :path => "../"
+  pod 'MoyaObjectMapper/RxSwift', :path => "../"
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'RxOptional'

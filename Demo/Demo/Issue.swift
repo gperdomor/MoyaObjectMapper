@@ -25,18 +25,22 @@
 //
 
 import Foundation
-import Mapper
+import ObjectMapper
 
 class Issue: Mappable {
-    let identifier: Int
-    let number: Int
-    let title: String
-    let body: String
+    var identifier: Int!
+    var number: Int!
+    var title: String!
+    var body: String!
     
-    required init(map: Mapper) throws {
-        try identifier = map.from("id")
-        try number = map.from("number")
-        try title = map.from("title")
-        try body = map.from("body")
+    required init?(map: Map) {
+        
+    }
+    
+    func mapping(map: Map) {
+        identifier <- map["id"]
+        number <- map["number"]
+        title <- map["title"]
+        body <- map["body"]
     }
 }
