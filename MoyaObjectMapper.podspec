@@ -3,9 +3,9 @@ Pod::Spec.new do |s|
   s.version      = "1.0.0"
   s.summary      = "ObjectMapper bindings for Moya"
   s.description  = <<-DESC
-    [ObjectMapper](https://github.com/lyft/mapper) bindings for
+    [ObjectMapper](https://github.com/Hearst-DD/ObjectMapper) bindings for
     [Moya](https://github.com/Moya/Moya) for easier JSON serialization.
-    Includes [RxSwift](https://github.com/ReactiveX/RxSwift/) and [ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa) bindings as well.
+    Includes [RxSwift](https://github.com/ReactiveX/RxSwift/) and [ReactiveSwift](https://github.com/ReactiveCocoa/ReactiveSwift) bindings as well.
     Instructions on how to use it are in
     [the README](https://github.com/gperdomor/MoyaObjectMapper).
   DESC

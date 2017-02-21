@@ -38,7 +38,7 @@ public extension ObservableType where E == Response {
             }
             .observeOn(MainScheduler.instance)
     }
-    
+
     public func map<T: Mappable>(to type: [T.Type], context: MapContext? = nil) throws -> Observable<[T]> {
         return observeOn(ConcurrentDispatchQueueScheduler(qos: .background))
             .flatMap { response -> Observable<[T]> in
@@ -46,7 +46,7 @@ public extension ObservableType where E == Response {
             }
             .observeOn(MainScheduler.instance)
     }
-    
+
     public func mapOptional<T: Mappable>(to type: T.Type, context: MapContext? = nil) ->  Observable<T?> {
         return observeOn(ConcurrentDispatchQueueScheduler(qos: .background))
             .flatMap { response -> Observable<T?> in
@@ -59,7 +59,7 @@ public extension ObservableType where E == Response {
             }
             .observeOn(MainScheduler.instance)
     }
-    
+
     public func mapOptional<T: Mappable>(to type: [T.Type], context: MapContext? = nil) -> Observable<[T]?> {
         return observeOn(ConcurrentDispatchQueueScheduler(qos: .background))
             .flatMap { response -> Observable<[T]?> in

@@ -34,16 +34,16 @@ public extension Response {
             let object = Mapper<T>(context: context).map(JSONObject: data) else {
                 throw MoyaError.jsonMapping(self)
         }
-        
+
         return object
     }
-    
+
     public func map<T: Mappable>(to type: [T.Type], context: MapContext? = nil) throws -> [T] {
         guard let data = try mapJSON() as? [[String : Any]],
             let objects = Mapper<T>(context: context).mapArray(JSONArray: data) else {
                 throw MoyaError.jsonMapping(self)
         }
         return objects
-        
+
     }
 }

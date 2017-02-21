@@ -29,9 +29,9 @@ import ObjectMapper
 
 struct Repository: Mappable {
     var identifier: Int!
-    var language: String?
     var name: String!
     var fullName: String!
+    var language: String?
     
     init?(map: Map) {
         if map.JSON["id"] == nil {
@@ -41,8 +41,8 @@ struct Repository: Mappable {
     
     mutating func mapping(map: Map) {
         identifier <- map["id"]
-        language <- map["language"]
         name <- map["name"]
         fullName <- map["full_name"]
+        language <- map["language"]
     }
 }

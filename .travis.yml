@@ -46,12 +46,16 @@ before_install:
   - brew update
   # Cocoapod
   - brew install cocoapods || brew upgrade cocoapods
+  # SwiftLint
+  - brew install swiftlint || brew upgrade swiftlint
   # Carthage tools
   - brew install carthage || brew upgrade carthage
   - curl -L -O https://github.com/YPlan/CartfileDiff/releases/download/0.1/CartfileDiff.pkg
   - sudo installer -pkg CartfileDiff.pkg -target /
   # xcpretty
   - gem install xcpretty
+  # danger
+  - gem install danger danger-swiftlint
 
 before_script:
   # bootstrap the dependencies for the project
@@ -97,10 +101,11 @@ script:
 
   # Run `pod lib lint` if specified
   #- if [ $POD_LINT == "YES" ]; then
-  #    pod lib lint;
+  #    pod lib lint --allow-warnings --verbose
   #  fi
 
 after_success:
+  - danger
   - bash <(curl -s https://codecov.io/bash)
 
 #before_deploy:
