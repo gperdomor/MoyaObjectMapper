@@ -2,6 +2,7 @@
 [![Build Status](https://travis-ci.org/gperdomor/MoyaObjectMapper.svg?branch=master)](https://travis-ci.org/gperdomor/MoyaObjectMapper)
 [![codecov](https://codecov.io/gh/gperdomor/MoyaObjectMapper/branch/master/graph/badge.svg)](https://codecov.io/gh/gperdomor/MoyaObjectMapper)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![CocoaPods compatible](https://img.shields.io/cocoapods/v/MoyaObjectMapper.svg)](https://cocoapods.org/pods/MoyaObjectMapper)
 [![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 
 [ObjectMapper](https://github.com/Hearst-DD/ObjectMapper) bindings for 
