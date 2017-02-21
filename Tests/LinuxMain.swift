@@ -1,11 +1,11 @@
 import XCTest
 import Quick
-@testable import MoyaModelMapperTests
-@testable import ReactiveMoyaModelMapperTests
-@testable import RxMoyaModelMapperTests
+@testable import MoyaObjectMapperTests
+@testable import ReactiveMoyaObjectMapperTests
+@testable import RxMoyaObjectMapperTests
 
 Quick.QCKMain([
-    MoyaModelMapperSpec.self,
-    ReactiveMoyaModelMapperSpec.self,
-    RxMoyaModelMapperSpec.self
+    MoyaObjectMapperSpec.self,
+    ReactiveMoyaObjectMapperSpec.self,
+    RxMoyaObjectMapperSpec.self
 ])

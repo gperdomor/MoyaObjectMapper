@@ -1,8 +1,8 @@
 //
 //  Repository.swift
-//  Demo
+//  MoyaObjectMapper
 //
-//  Created by Gustavo Perdomo on 2/20/17.
+//  Created by Gustavo Perdomo on 2/19/17.
 //  Copyright (c) 2017 Gustavo Perdomo. Licensed under the MIT license, as follows:
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -27,20 +27,22 @@
 import Foundation
 import ObjectMapper
 
-class Repository: Mappable {
+struct Repository: Mappable {
     var identifier: Int!
     var language: String?
     var name: String!
     var fullName: String!
     
-    required init?(map: Map) {
-        
+    init?(map: Map) {
+        if map.JSON["id"] == nil {
+            return nil
+        }
     }
     
-    func mapping(map: Map) {
+    mutating func mapping(map: Map) {
         identifier <- map["id"]
+        language <- map["language"]
         name <- map["name"]
         fullName <- map["full_name"]
-        language <- map["language"]
     }
 }

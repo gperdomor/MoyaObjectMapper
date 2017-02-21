@@ -1,8 +1,8 @@
 //
-//  Repository.swift
-//  Demo
+//  Response+ObjectMapper.swift
+//  MoyaObjectMapper
 //
-//  Created by Gustavo Perdomo on 2/20/17.
+//  Created by Gustavo Perdomo on 2/19/17.
 //  Copyright (c) 2017 Gustavo Perdomo. Licensed under the MIT license, as follows:
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -25,22 +25,25 @@
 //
 
 import Foundation
+import Moya
 import ObjectMapper
 
-class Repository: Mappable {
-    var identifier: Int!
-    var language: String?
-    var name: String!
-    var fullName: String!
-    
-    required init?(map: Map) {
+public extension Response {
+    public func map<T: Mappable>(to type: T.Type, context: MapContext? = nil) throws -> T {
+        guard let data = try mapJSON() as? [String : Any],
+            let object = Mapper<T>(context: context).map(JSONObject: data) else {
+                throw MoyaError.jsonMapping(self)
+        }
         
+        return object
     }
     
-    func mapping(map: Map) {
-        identifier <- map["id"]
-        name <- map["name"]
-        fullName <- map["full_name"]
-        language <- map["language"]
+    public func map<T: Mappable>(to type: [T.Type], context: MapContext? = nil) throws -> [T] {
+        guard let data = try mapJSON() as? [[String : Any]],
+            let objects = Mapper<T>(context: context).mapArray(JSONArray: data) else {
+                throw MoyaError.jsonMapping(self)
+        }
+        return objects
+        
     }
 }
