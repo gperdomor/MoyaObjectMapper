@@ -31,25 +31,25 @@ import ObjectMapper
 import MoyaObjectMapper
 
 extension SignalProducerProtocol where Value == Moya.Response, Error == MoyaError {
-    
+
     public func map<T: Mappable>(to type: T.Type, context: MapContext? = nil) -> SignalProducer<T, MoyaError> {
         return producer.flatMap(.latest) { response -> SignalProducer<T, Error> in
             return unwrapThrowable { try response.map(to: type, context: context) }
         }
     }
-    
+
     public func map<T: Mappable>(to type: [T.Type], context: MapContext? = nil) -> SignalProducer<[T], MoyaError> {
         return producer.flatMap(.latest) { response -> SignalProducer<[T], Error> in
             return unwrapThrowable { try response.map(to: type, context: context) }
         }
     }
-    
+
     public func mapOptional<T: Mappable>(to type: T.Type, context: MapContext? = nil) -> SignalProducer<T?, MoyaError> {
         return producer.flatMap(.latest) { response -> SignalProducer<T?, Error> in
             return unwrapOptionalThrowable { try response.map(to: type, context: context) }
         }
     }
-    
+
     public func mapOptional<T: Mappable>(to type: [T.Type], context: MapContext? = nil) -> SignalProducer<[T]?, MoyaError> {
         return producer.flatMap(.latest) { response -> SignalProducer<[T]?, Error> in
             return unwrapOptionalThrowable { try response.map(to: type, context: context) }
