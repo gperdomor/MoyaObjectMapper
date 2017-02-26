@@ -22,7 +22,7 @@ end
 # Carthage Xcode project to avoid breaking things for our Carthage users.
 added_swift_library_files = git.added_files.grep(/Sources.*\.swift/).empty?
 deleted_swift_library_files = git.deleted_files.grep(/Sources.*\.swift/).empty?
-modified_carthage_xcode_project = !(git.deleted_files.grep(/Moya\.xcodeproj/).empty?)
+modified_carthage_xcode_project = !(git.deleted_files.grep(/MoyaObjectMapper\.xcodeproj/).empty?)
 if (added_swift_library_files || deleted_swift_library_files) && modified_carthage_xcode_project
   fail("Added or removed library files require the Carthage Xcode project to be updated.")
 end
@@ -35,7 +35,7 @@ end
 
 # Warn when either the podspec or Cartfile + Cartfile.resolved has been updated,
 # but not both.
-podspec_updated = !git.modified_files.grep(/Moya.podspec/).empty?
+podspec_updated = !git.modified_files.grep(/MoyaObjectMapper.podspec/).empty?
 cartfile_updated = !git.modified_files.grep(/Cartfile/).empty?
 cartfile_resolved_updated = !git.modified_files.grep(/Cartfile.resolved/).empty?
 
