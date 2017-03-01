@@ -104,7 +104,7 @@ script:
   # Run `pod lib lint` if specified
   - if [ ${POD_LINT} == "YES" ]; then
       pod repo update > /dev/null;
-      travis_wait 30 pod lib lint --allow-warnings;
+      travis_wait 60 pod lib lint --allow-warnings;
     fi
 
 after_success:
