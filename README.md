@@ -14,17 +14,17 @@
 ## CocoaPods
 Use the following entry in your Podfile
 ```
-pod 'MoyaObjectMapper', '1.0.1'
+pod 'MoyaObjectMapper', '1.0.2'
 ```
 
 The subspec if you want to use the bindings over RxSwift.
 ```
-pod 'MoyaObjectMapper/RxSwift', '1.0.1'
+pod 'MoyaObjectMapper/RxSwift', '1.0.2'
 ```
 
 And the subspec if you want to use the bindings over ReactiveSwift.
 ```
-pod 'MoyaObjectMapper/ReactiveSwift', '1.0.1'
+pod 'MoyaObjectMapper/ReactiveSwift', '1.0.2'
 ```
 
 # Usage

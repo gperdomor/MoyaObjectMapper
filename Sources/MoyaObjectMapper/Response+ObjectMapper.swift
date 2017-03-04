@@ -29,6 +29,14 @@ import Moya
 import ObjectMapper
 
 public extension Response {
+
+    /// Maps data received from the server into an object which implements the Mappable protocol.
+    ///
+    /// - Parameters:
+    ///   - type: Type of the object which implements the Mappable protocol.
+    ///   - context: The mapping context.
+    /// - Returns: The map context.
+    /// - Throws: MoyaError if the response can't be mapped.
     public func map<T: Mappable>(to type: T.Type, context: MapContext? = nil) throws -> T {
         guard let data = try mapJSON() as? [String : Any],
             let object = Mapper<T>(context: context).map(JSONObject: data) else {
@@ -38,6 +46,13 @@ public extension Response {
         return object
     }
 
+    /// Maps data received from the server into an array of object which implements the Mappable protocol.
+    ///
+    /// - Parameters:
+    ///   - type: Type of the object which implements the Mappable protocol.
+    ///   - context: The mapping context.
+    /// - Returns: The map context.
+    /// - Throws: MoyaError if the response can't be mapped.
     public func map<T: Mappable>(to type: [T.Type], context: MapContext? = nil) throws -> [T] {
         guard let data = try mapJSON() as? [[String : Any]],
             let objects = Mapper<T>(context: context).mapArray(JSONArray: data) else {

@@ -29,10 +29,10 @@ import RxSwift
 import RxCocoa
 
 class RxSwiftViewController: UIViewController {
-    
+
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
-    
+
     let disposeBag = DisposeBag()
     var manager: RxIssueTracker!
     var latestRepositoryName: Observable<String> {
@@ -42,25 +42,25 @@ class RxSwiftViewController: UIViewController {
             .debounce(0.5, scheduler: MainScheduler.instance)
             .distinctUntilChanged()
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+
         searchBar.text = "Moya/Moya"
         setupRx()
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
     func setupRx() {
-        
+
         // Now we will setup our model
         manager = RxIssueTracker(name: latestRepositoryName)
-        
+
         // And bind issues to table view
         // Here is where the magic happens, with only one binding
         // we have filled up about 3 table view data source methods
@@ -72,12 +72,12 @@ class RxSwiftViewController: UIViewController {
                 return cell
             }
             .addDisposableTo(disposeBag)
-        
+
         // Here we tell table view that if user clicks on a cell,
         // and the keyboard is still visible, hide it
         tableView
             .rx.itemSelected
-            .subscribe(onNext: { indexPath in
+            .subscribe(onNext: { _ in
                 if self.searchBar.isFirstResponder == true {
                     self.view.endEditing(true)
                 }
@@ -85,4 +85,3 @@ class RxSwiftViewController: UIViewController {
             .addDisposableTo(disposeBag)
     }
 }
-

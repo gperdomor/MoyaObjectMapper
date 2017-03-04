@@ -4,6 +4,8 @@ opt_in_rules:
 
 included:
   - Sources
+  - Tests
+  - Demo
 
 function_body_length:
   warning: 50

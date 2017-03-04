@@ -32,11 +32,11 @@ class Repository: Mappable {
     var language: String?
     var name: String!
     var fullName: String!
-    
+
     required init?(map: Map) {
-        
+
     }
-    
+
     func mapping(map: Map) {
         identifier <- map["id"]
         name <- map["name"]

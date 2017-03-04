@@ -42,7 +42,7 @@ enum GitHub {
 
 extension GitHub: TargetType {
     var baseURL: URL { return URL(string: "https://api.github.com")! }
-    
+
     var path: String {
         switch self {
         case .repos(let name):
@@ -55,15 +55,15 @@ extension GitHub: TargetType {
             return "/repos/\(repositoryName)/issues"
         }
     }
-    
+
     var method: Moya.Method {
         return .get
     }
-    
+
     var parameters: [String: Any]? {
         return nil
     }
-    
+
     var sampleData: Data {
         switch self {
         case .repos(_):
@@ -76,11 +76,11 @@ extension GitHub: TargetType {
             return "{\"id\": 132942471, \"number\": 405, \"title\": \"Updates example with fix to String extension by changing to Optional\", \"body\": \"Fix it pls.\"}".data(using: .utf8)!
         }
     }
-    
+
     var task: Task {
         return .request
     }
-    
+
     var parameterEncoding: ParameterEncoding {
         return JSONEncoding.default
     }

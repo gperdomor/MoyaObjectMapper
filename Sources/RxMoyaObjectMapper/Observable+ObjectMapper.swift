@@ -31,7 +31,14 @@ import ObjectMapper
 import MoyaObjectMapper
 
 public extension ObservableType where E == Response {
-    public func map<T: Mappable>(to type: T.Type, context: MapContext? = nil) ->  Observable<T> {
+
+    /// Maps data received from the observable into an object which implements the Mappable protocol.
+    ///
+    /// - Parameters:
+    ///   - type: Type of the object which implements the Mappable protocol.
+    ///   - context: The map context.
+    /// - Returns: Observable of object or error, if the data can't be mapped
+    public func map<T: Mappable>(to type: T.Type, context: MapContext? = nil) -> Observable<T> {
         return observeOn(ConcurrentDispatchQueueScheduler(qos: .background))
             .flatMap { response -> Observable<T> in
                 return Observable.just(try response.map(to: type, context: context))
@@ -39,7 +46,13 @@ public extension ObservableType where E == Response {
             .observeOn(MainScheduler.instance)
     }
 
-    public func map<T: Mappable>(to type: [T.Type], context: MapContext? = nil) throws -> Observable<[T]> {
+    /// Maps data received from the observable into an array of objects which implements the Mappable protocol.
+    ///
+    /// - Parameters:
+    ///   - type: Type of the object which implements the Mappable protocol.
+    ///   - context: The map context.
+    /// - Returns: Observable of array or error, if the data can't be mapped
+    public func map<T: Mappable>(to type: [T.Type], context: MapContext? = nil) -> Observable<[T]> {
         return observeOn(ConcurrentDispatchQueueScheduler(qos: .background))
             .flatMap { response -> Observable<[T]> in
                 return Observable.just(try response.map(to: type, context: context))
@@ -47,7 +60,13 @@ public extension ObservableType where E == Response {
             .observeOn(MainScheduler.instance)
     }
 
-    public func mapOptional<T: Mappable>(to type: T.Type, context: MapContext? = nil) ->  Observable<T?> {
+    /// Maps data received from the observable into an object which implements the Mappable protocol.
+    ///
+    /// - Parameters:
+    ///   - type: Type of the object which implements the Mappable protocol.
+    ///   - context: The map context.
+    /// - Returns: Observable of object or nil, if the data can't be mapped
+    public func mapOptional<T: Mappable>(to type: T.Type, context: MapContext? = nil) -> Observable<T?> {
         return observeOn(ConcurrentDispatchQueueScheduler(qos: .background))
             .flatMap { response -> Observable<T?> in
                 do {
@@ -60,6 +79,12 @@ public extension ObservableType where E == Response {
             .observeOn(MainScheduler.instance)
     }
 
+    /// Maps data received from the observable into an array of objects which implements the Mappable protocol.
+    ///
+    /// - Parameters:
+    ///   - type: Type of the object which implements the Mappable protocol.
+    ///   - context: The map context.
+    /// - Returns: Observable of array or nil, if the data can't be mapped
     public func mapOptional<T: Mappable>(to type: [T.Type], context: MapContext? = nil) -> Observable<[T]?> {
         return observeOn(ConcurrentDispatchQueueScheduler(qos: .background))
             .flatMap { response -> Observable<[T]?> in

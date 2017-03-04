@@ -33,69 +33,64 @@ import RxBlocking
 
 class RxMoyaObjectMapperSpec: QuickSpec {
     let provider = RxMoyaProvider<GitHub>(stubClosure: RxMoyaProvider.immediatelyStub)
-    
+
     override func spec() {
         describe("RxMoyaObjectMapper") {
             it("can mapped to array of objects") {
+                var repos: [Repository]!
                 do {
-                    let repos: [Repository]!
-                    
                     repos = try self.provider.request(GitHub.repos(username: "gperdomor", keyPath: false))
                         .map(to: [Repository.self])
                         .toBlocking()
                         .single()
-                    
-                    expect(repos!.count).to(equal(1))
-                    expect(repos![0].identifier).to(equal(1))
-                    expect(repos![0].name).to(equal("sygnaler"))
-                    expect(repos![0].fullName).to(equal("gperdomor/sygnaler"))
-                    expect(repos![0].language).to(equal("Swift"))
-                    
-                } catch {
-                    expect(true).to(beFalse())
-                }
+                } catch {}
+
+                expect(repos).toNot(beNil())
+                expect(repos.count).to(equal(1))
+                expect(repos[0].identifier).to(equal(1))
+                expect(repos[0].name).to(equal("sygnaler"))
+                expect(repos[0].fullName).to(equal("gperdomor/sygnaler"))
+                expect(repos[0].language).to(equal("Swift"))
             }
-            
+
             it("can mapped to objects") {
+                var repo: Repository!
+
                 do {
-                    let repo: Repository!
-                    
                     repo = try self.provider.request(GitHub.repo(fullName: "gperdomor/sygnaler", keyPath: false))
                         .map(to: Repository.self)
                         .toBlocking()
                         .single()
-                    
-                    expect(repo.identifier).to(equal(1))
-                    expect(repo.name).to(equal("sygnaler"))
-                    expect(repo.fullName).to(equal("gperdomor/sygnaler"))
-                    expect(repo.language).to(equal("Swift"))
-                    
-                } catch {
-                    expect(true).to(beFalse())
-                }
+                } catch {}
+
+                expect(repo).toNot(beNil())
+                expect(repo.identifier).to(equal(1))
+                expect(repo.name).to(equal("sygnaler"))
+                expect(repo.fullName).to(equal("gperdomor/sygnaler"))
+                expect(repo.language).to(equal("Swift"))
             }
-            
+
             it("can map optionals") {
+                var repo: Repository?
+                var repos: [Repository]?
+
                 do {
-                    var repo: Repository?
-                    var repos: [Repository]?
-                    
                     repo = try self.provider.request(GitHub.repo(fullName: "gperdomor/sygnaler", keyPath: true))
                         .mapOptional(to: Repository.self)
                         .toBlocking()
                         .single()!
-                    
-                    expect(repo).to(beNil())
-                    
+                } catch {}
+
+                expect(repo).to(beNil())
+
+                do {
                     repos = try self.provider.request(GitHub.repos(username: "gperdomor", keyPath: true))
                         .mapOptional(to: [Repository.self])
                         .toBlocking()
                         .single()!
-                    
-                    expect(repos).to(beNil())
-                } catch {
-                    expect(true).to(beTrue())
-                }
+                } catch {}
+
+                expect(repos).to(beNil())
             }
         }
     }
