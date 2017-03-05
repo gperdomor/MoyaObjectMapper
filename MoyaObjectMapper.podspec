@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "MoyaObjectMapper"
-  s.version      = "1.0.2"
+  s.version      = "1.0.3"
   s.summary      = "ObjectMapper bindings for Moya. Includes RxSwift and ReactiveSwift bindings as well."
   s.description  = <<-DESC
     [ObjectMapper](https://github.com/Hearst-DD/ObjectMapper) bindings for
