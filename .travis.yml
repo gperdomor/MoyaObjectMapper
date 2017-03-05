@@ -102,7 +102,7 @@ script:
     fi
 
   # Run `pod lib lint` if specified
-  - if [ ${POD_LINT} == "YES" ]; then
+  - if [ $POD_LINT == "YES" ] && [ "$TRAVIS_PULL_REQUEST" != "false" ]; then
       pod repo update > /dev/null;
       travis_wait 60 pod lib lint --allow-warnings;
     fi

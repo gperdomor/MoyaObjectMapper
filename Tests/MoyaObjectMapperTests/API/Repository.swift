@@ -32,13 +32,13 @@ struct Repository: Mappable {
     var name: String!
     var fullName: String!
     var language: String?
-    
+
     init?(map: Map) {
         if map.JSON["id"] == nil {
             return nil
         }
     }
-    
+
     mutating func mapping(map: Map) {
         identifier <- map["id"]
         name <- map["name"]

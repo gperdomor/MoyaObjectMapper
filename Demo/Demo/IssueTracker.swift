@@ -29,7 +29,7 @@ import Moya
 
 class IssueTracker {
     let provider = MoyaProvider<GitHub>()
-    
+
     func findUserRepositories(name: String, completion: @escaping Moya.Completion) -> Cancellable {
         return self.provider.request(GitHub.repos(username: name), completion: completion)
     }

@@ -32,11 +32,11 @@ class Issue: Mappable {
     var number: Int!
     var title: String!
     var body: String!
-    
+
     required init?(map: Map) {
-        
+
     }
-    
+
     func mapping(map: Map) {
         identifier <- map["id"]
         number <- map["number"]

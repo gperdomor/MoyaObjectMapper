@@ -32,12 +32,12 @@ import ReactiveMoyaObjectMapper
 
 class ReactiveMoyaObjectMapperSpec: QuickSpec {
     let provider = ReactiveSwiftMoyaProvider<GitHub>(stubClosure: ReactiveSwiftMoyaProvider.immediatelyStub)
-    
+
     override func spec() {
         describe("ReactiveMoyaObjectMapper") {
             it("can mapped to array of objects") {
                 var repos: [Repository]!
-                
+
                 waitUntil { done in
                     self.provider
                         .request(GitHub.repos(username: "gperdomor", keyPath: false))
@@ -52,7 +52,7 @@ class ReactiveMoyaObjectMapperSpec: QuickSpec {
                             }
                     }
                 }
-                
+
                 expect(repos).toNot(beNil())
                 expect(repos.count).to(equal(1))
                 expect(repos[0].identifier).to(equal(1))
@@ -60,10 +60,10 @@ class ReactiveMoyaObjectMapperSpec: QuickSpec {
                 expect(repos[0].fullName).to(equal("gperdomor/sygnaler"))
                 expect(repos[0].language).to(equal("Swift"))
             }
-            
+
             it("can mapped to objects") {
                 var repo: Repository!
-                
+
                 waitUntil { done in
                     self.provider
                         .request(GitHub.repo(fullName: "gperdomor/sygnaler", keyPath: false))
@@ -78,17 +78,17 @@ class ReactiveMoyaObjectMapperSpec: QuickSpec {
                             }
                     }
                 }
-                
+
                 expect(repo.identifier).to(equal(1))
                 expect(repo.name).to(equal("sygnaler"))
                 expect(repo.fullName).to(equal("gperdomor/sygnaler"))
                 expect(repo.language).to(equal("Swift"))
             }
-            
+
             it("can map optionals") {
                 var repo: Repository!
                 var repos: [Repository]!
-                
+
                 waitUntil { done in
                     self.provider
                         .request(GitHub.repo(fullName: "gperdomor/sygnaler", keyPath: true))
@@ -97,8 +97,6 @@ class ReactiveMoyaObjectMapperSpec: QuickSpec {
                             switch event {
                             case .value(let object):
                                 repo = object
-                            case .failed(let error):
-                                expect(true).to(beFalse())
                             case .completed:
                                 done()
                             default: break
@@ -107,7 +105,7 @@ class ReactiveMoyaObjectMapperSpec: QuickSpec {
                 }
 
                 expect(repo).to(beNil())
-                
+
                 waitUntil { done in
                     self.provider
                         .request(GitHub.repos(username: "gperdomor", keyPath: true))
@@ -116,15 +114,13 @@ class ReactiveMoyaObjectMapperSpec: QuickSpec {
                             switch event {
                             case .value(let objects):
                                 repos = objects
-                            case .failed(let error):
-                                expect(true).to(beFalse())
                             case .completed:
                                 done()
                             default: break
                             }
                     }
                 }
-                
+
                 expect(repos).to(beNil())
             }
         }

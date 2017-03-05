@@ -27,33 +27,33 @@
 import UIKit
 
 class MoyaViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource {
-    
+
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
-    
+
     var manager = IssueTracker()
     var repositories = [Repository]()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+
         searchBar.delegate = self
         searchBar.placeholder = "Github Username and press Search"
-        
+
         tableView.delegate = self
         tableView.dataSource = self
-        
+
         searchBar.text = "gperdomor"
-        
+
         self.downloadRepos(from: searchBar.text!)
     }
-    
+
     func downloadRepos(from username: String) {
         _ = manager.findUserRepositories(name: username, completion: { result in
             var success = true
             var message = "Unable to fetch from GitHub"
-            
+
             switch result {
             case let .success(response):
                 do {
@@ -70,10 +70,10 @@ class MoyaViewController: UIViewController, UISearchBarDelegate, UITableViewDele
                 message = error.description
                 success = false
             }
-            
+
             if !success {
                 let alertController = UIAlertController(title: "GitHub Fetch", message: message, preferredStyle: .alert)
-                let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
+                let ok = UIAlertAction(title: "OK", style: .default, handler: { (_) -> Void in
                     alertController.dismiss(animated: true, completion: nil)
                 })
                 alertController.addAction(ok)
@@ -81,35 +81,35 @@ class MoyaViewController: UIViewController, UISearchBarDelegate, UITableViewDele
             }
         })
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
     func searchBarSearchButtonClicked(_: UISearchBar) {
         downloadRepos(from: searchBar.text!)
         searchBar.resignFirstResponder()
     }
-    
+
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searchBar.resignFirstResponder()
     }
-    
+
     // MARK: - Table View
     func tableView(_: UITableView, didSelectRowAt: IndexPath) {
         if(searchBar.isFirstResponder) {
             searchBar.resignFirstResponder()
         }
     }
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return repositories.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MoyaCell", for: indexPath) as UITableViewCell
-        
+
         let repo = repositories[(indexPath as NSIndexPath).row]
         (cell.textLabel as UILabel!).text = repo.name
         return cell

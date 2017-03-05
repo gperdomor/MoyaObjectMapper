@@ -33,11 +33,11 @@ import MoyaObjectMapper
 class RxIssueTracker {
     let provider = RxMoyaProvider<GitHub>()
     let repositoryName: Observable<String>
-    
+
     init(name: Observable<String>) {
         self.repositoryName = name
     }
-    
+
     func trackIssues() -> Observable<[Issue]> {
         return self.repositoryName
             .observeOn(MainScheduler.instance)
@@ -47,20 +47,20 @@ class RxIssueTracker {
             }
             .flatMapLatest { repository -> Observable<[Issue]?> in
                 guard let repository = repository else { return Observable.just(nil) }
-                
+
                 print("Repository: \(repository.fullName)")
                 return self.findIssues(repository: repository)
             }
             .replaceNilWith([])
     }
-    
+
     internal func findIssues(repository: Repository) -> Observable<[Issue]?> {
         return self.provider
             .request(GitHub.issues(repositoryFullName: repository.fullName))
             .debug()
             .mapOptional(to: [Issue.self])
     }
-    
+
     internal func findRepository(name: String) -> Observable<Repository?> {
         return self.provider
             .request(GitHub.repo(fullName: name))

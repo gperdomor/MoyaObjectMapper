@@ -40,7 +40,7 @@ enum GitHub {
 
 extension GitHub: TargetType {
     var baseURL: URL { return URL(string: "https://api.github.com")! }
-    
+
     var path: String {
         switch self {
         case .repos(let name, _):
@@ -49,15 +49,15 @@ extension GitHub: TargetType {
             return "/repos/\(name)"
         }
     }
-    
+
     var method: Moya.Method {
         return .get
     }
-    
+
     var parameters: [String: Any]? {
         return nil
     }
-    
+
     var sampleData: Data {
         switch self {
         case .repos(_, let keyPath):
@@ -72,11 +72,11 @@ extension GitHub: TargetType {
             return "{\"id\": 1, \"name\": \"sygnaler\", \"full_name\": \"gperdomor/sygnaler\", \"language\": \"Swift\"}".data(using: .utf8)!
         }
     }
-    
+
     var task: Task {
         return .request
     }
-    
+
     var parameterEncoding: ParameterEncoding {
         return JSONEncoding.default
     }
