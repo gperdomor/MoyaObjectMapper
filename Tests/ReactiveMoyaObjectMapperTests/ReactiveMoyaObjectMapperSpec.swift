@@ -29,99 +29,215 @@ import Quick
 import Nimble
 import ReactiveMoya
 import ReactiveMoyaObjectMapper
+import Moya
 
 class ReactiveMoyaObjectMapperSpec: QuickSpec {
-    let provider = ReactiveSwiftMoyaProvider<GitHub>(stubClosure: ReactiveSwiftMoyaProvider.immediatelyStub)
-
     override func spec() {
         describe("ReactiveMoyaObjectMapper") {
-            it("can mapped to array of objects") {
-                var repos: [Repository]!
+            var provider: ReactiveSwiftMoyaProvider<GitHub>!
 
-                waitUntil { done in
-                    self.provider
-                        .request(GitHub.repos(username: "gperdomor", keyPath: false))
-                        .map(to: [Repository.self])
-                        .start { event in
-                            switch event {
-                            case .value(let objects):
-                                repos = objects
-                            case .completed:
-                                done()
-                            default: break
-                            }
-                    }
-                }
-
-                expect(repos).toNot(beNil())
-                expect(repos.count).to(equal(1))
-                expect(repos[0].identifier).to(equal(1))
-                expect(repos[0].name).to(equal("sygnaler"))
-                expect(repos[0].fullName).to(equal("gperdomor/sygnaler"))
-                expect(repos[0].language).to(equal("Swift"))
+            beforeEach {
+                provider = ReactiveSwiftMoyaProvider<GitHub>(stubClosure: ReactiveSwiftMoyaProvider.immediatelyStub)
             }
 
-            it("can mapped to objects") {
-                var repo: Repository!
+            describe("Map to Object") {
+                var repo: Repository?
+                var error: MoyaError?
 
-                waitUntil { done in
-                    self.provider
-                        .request(GitHub.repo(fullName: "gperdomor/sygnaler", keyPath: false))
-                        .map(to: Repository.self)
-                        .start { event in
-                            switch event {
-                            case .value(let object):
-                                repo = object
-                            case .completed:
-                                done()
-                            default: break
-                            }
-                    }
+                beforeEach {
+                    repo = nil
+                    error = nil
                 }
 
-                expect(repo.identifier).to(equal(1))
-                expect(repo.name).to(equal("sygnaler"))
-                expect(repo.fullName).to(equal("gperdomor/sygnaler"))
-                expect(repo.language).to(equal("Swift"))
+                it("Can map response to object") {
+                    waitUntil { done in
+                        provider
+                            .request(GitHub.repo(fullName: "gperdomor/sygnaler", keyPath: false))
+                            .map(to: Repository.self)
+                            .start { event in
+                                switch event {
+                                case .value(let object):
+                                    repo = object
+                                case .completed:
+                                    done()
+                                default: break
+                                }
+                        }
+                    }
+
+                    expect(repo).toNot(beNil())
+                    expect(repo?.identifier).to(equal(1))
+                    expect(repo?.name).to(equal("sygnaler"))
+                    expect(repo?.fullName).to(equal("gperdomor/sygnaler"))
+                    expect(repo?.language).to(equal("Swift"))
+
+                }
+
+                it("Can throws error if mapping fails") {
+                    waitUntil { done in
+                        provider
+                            .request(GitHub.repo(fullName: "gperdomor/sygnaler", keyPath: true))
+                            .map(to: Repository.self)
+                            .start { event in
+                                switch event {
+                                case .value(let object):
+                                    repo = object
+                                case .failed(let e):
+                                    error = e
+                                    done()
+                                default: break
+                                }
+                        }
+                    }
+
+                    expect(repo).to(beNil())
+                    expect(error).toNot(beNil())
+                    expect(error).to(beAnInstanceOf(MoyaError.self))
+                }
+
+                context("Optionals") {
+                    it("Can map response to optional object") {
+                        waitUntil { done in
+                            provider
+                                .request(GitHub.repo(fullName: "gperdomor/sygnaler", keyPath: false))
+                                .mapOptional(to: Repository.self)
+                                .start { event in
+                                    switch event {
+                                    case .value(let object):
+                                        repo = object
+                                    case .completed:
+                                        done()
+                                    default: break
+                                    }
+                            }
+                        }
+
+                        expect(repo).toNot(beNil())
+                        expect(repo?.identifier).to(equal(1))
+                        expect(repo?.name).to(equal("sygnaler"))
+                        expect(repo?.fullName).to(equal("gperdomor/sygnaler"))
+                        expect(repo?.language).to(equal("Swift"))
+
+                    }
+
+                    it("Can return nil if mapping fails") {
+                        waitUntil { done in
+                            provider
+                                .request(GitHub.repo(fullName: "gperdomor/sygnaler", keyPath: true))
+                                .mapOptional(to: Repository.self)
+                                .start { event in
+                                    switch event {
+                                    case .value(let object):
+                                        repo = object
+                                        done()
+                                    default: break
+                                    }
+                            }
+                        }
+
+                        expect(repo).to(beNil())
+                    }
+                }
             }
 
-            it("can map optionals") {
-                var repo: Repository!
-                var repos: [Repository]!
+            describe("Map to Array") {
+                var repos: [Repository]?
+                var error: MoyaError?
 
-                waitUntil { done in
-                    self.provider
-                        .request(GitHub.repo(fullName: "gperdomor/sygnaler", keyPath: true))
-                        .mapOptional(to: Repository.self)
-                        .start { event in
-                            switch event {
-                            case .value(let object):
-                                repo = object
-                            case .completed:
-                                done()
-                            default: break
-                            }
-                    }
+                beforeEach {
+                    repos = nil
+                    error = nil
                 }
 
-                expect(repo).to(beNil())
-
-                waitUntil { done in
-                    self.provider
-                        .request(GitHub.repos(username: "gperdomor", keyPath: true))
-                        .mapOptional(to: [Repository.self])
-                        .start { event in
-                            switch event {
-                            case .value(let objects):
-                                repos = objects
-                            case .completed:
-                                done()
-                            default: break
-                            }
+                it("can mapped to array of objects") {
+                    waitUntil { done in
+                        provider
+                            .request(GitHub.repos(username: "gperdomor", keyPath: false))
+                            .map(to: [Repository.self])
+                            .start { event in
+                                switch event {
+                                case .value(let objects):
+                                    repos = objects
+                                case .completed:
+                                    done()
+                                default: break
+                                }
+                        }
                     }
+
+                    expect(repos).toNot(beNil())
+                    expect(repos?.count).to(equal(1))
+                    expect(repos?[0].identifier).to(equal(1))
+                    expect(repos?[0].name).to(equal("sygnaler"))
+                    expect(repos?[0].fullName).to(equal("gperdomor/sygnaler"))
+                    expect(repos?[0].language).to(equal("Swift"))
                 }
 
-                expect(repos).to(beNil())
+                it("Can throws error if mapping fails") {
+                    waitUntil { done in
+                        provider
+                            .request(GitHub.repos(username: "gperdomor", keyPath: true))
+                            .map(to: [Repository.self])
+                            .start { event in
+                                switch event {
+                                case .value(let object):
+                                    repos = object
+                                case .failed(let e):
+                                    error = e
+                                    done()
+                                default: break
+                                }
+                        }
+                    }
+
+                    expect(repos).to(beNil())
+                    expect(error).toNot(beNil())
+                    expect(error).to(beAnInstanceOf(MoyaError.self))
+                }
+
+                context("Optionals") {
+                    it("can mapped to array of objects") {
+                        waitUntil { done in
+                            provider
+                                .request(GitHub.repos(username: "gperdomor", keyPath: false))
+                                .mapOptional(to: [Repository.self])
+                                .start { event in
+                                    switch event {
+                                    case .value(let objects):
+                                        repos = objects
+                                    case .completed:
+                                        done()
+                                    default: break
+                                    }
+                            }
+                        }
+
+                        expect(repos).toNot(beNil())
+                        expect(repos?.count).to(equal(1))
+                        expect(repos?[0].identifier).to(equal(1))
+                        expect(repos?[0].name).to(equal("sygnaler"))
+                        expect(repos?[0].fullName).to(equal("gperdomor/sygnaler"))
+                        expect(repos?[0].language).to(equal("Swift"))
+                    }
+
+                    it("Can return nil if mapping fails") {
+                        waitUntil { done in
+                            provider
+                                .request(GitHub.repos(username: "gperdomor", keyPath: true))
+                                .mapOptional(to: [Repository.self])
+                                .start { event in
+                                    switch event {
+                                    case .value(let object):
+                                        repos = object
+                                        done()
+                                    default: break
+                                    }
+                            }
+                        }
+
+                        expect(repos).to(beNil())
+                    }
+                }
             }
         }
     }
