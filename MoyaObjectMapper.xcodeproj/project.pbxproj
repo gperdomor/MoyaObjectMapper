@@ -2491,7 +2491,7 @@
 				INFOPLIST_FILE = Configs/MoyaObjectMapper.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gperdomor.MoyaObjectMapper-watchOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gperdomor.RxMoyaObjectMapper-watchOS";
 				PRODUCT_NAME = RxMoyaObjectMapper;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -2517,7 +2517,7 @@
 				INFOPLIST_FILE = Configs/MoyaObjectMapper.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gperdomor.MoyaObjectMapper-watchOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gperdomor.RxMoyaObjectMapper-watchOS";
 				PRODUCT_NAME = RxMoyaObjectMapper;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
