@@ -54,10 +54,10 @@ public extension Response {
     /// - Returns: The map context.
     /// - Throws: MoyaError if the response can't be mapped.
     public func map<T: Mappable>(to type: [T.Type], context: MapContext? = nil) throws -> [T] {
-        guard let data = try mapJSON() as? [[String : Any]],
-            let objects = Mapper<T>(context: context).mapArray(JSONArray: data) else {
+        guard let data = try mapJSON() as? [[String : Any]] else {
                 throw MoyaError.jsonMapping(self)
         }
+        let objects = Mapper<T>(context: context).mapArray(JSONArray: data)
         return objects
 
     }
